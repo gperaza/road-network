@@ -1,0 +1,67 @@
+\documentclass[12pt, letterpaper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{float}
+\usepackage{url}
+
+\title{Commentary on Boeing's 2017 OSMnx}
+\author{Alejandro Puerto Castro}
+\date{January 2021}
+
+\begin{document}
+	
+	\maketitle
+	
+	In his article \cite{boeing_osmnx_2017}, Boeing presents a new tool: OSMnx. This tool contributes five primary capabilities for researchers and practitioners related to street network analysis: automated and on-demand downloading place boundaries and building footprints; automated and custom downloading and constructing street networks from OpenStreetMap into multidigraphs; correcting network topology; saving street networks to disk as shapefiles, GraphML, or SVG files; and analyzing street networks.
+	
+	It also mentions the limitations of similar tools for street network research and analysis. Basic concepts on graphs and networks are described as well as the different representations of street networks. In this case, the author considers street networks as primal (intersections as nodes and street segments as edges), non-planar (some edges crossing), weighted multidigraphs with self-loops (due to dead-ends).
+	
+	For street network analysis, the author mentions relevant measures that OSMnx calculate such as:
+	\begin{itemize}
+		\item \textbf{Average node degree}: mean number of inbound and outbound edges.
+		\item \textbf{Intersection count}: Number of intersections in network
+		\item \textbf{Average streets per node}: Mean number of physical streets that emanate from each node (intersections and dead-ends)
+		\item \textbf{Counts of streets per node}: A dictionary with keys equals to the number of streets emanating from the node, and values equals to the number of nodes with this number.
+		\item \textbf{Proportions of streets per node}: A dictionary, same as above, but represents a proportion of the total, rather than raw counts
+		\item \textbf{Total edge length}: Sum of edge lengths in network (meters)
+		\item \textbf{Average edge length}: Mean edge length in network (meters)
+		\item \textbf{Total street length}: Sum of edge lengths in undirected representation of network
+		\item \textbf{Average street length}: Mean edge length in undirected representation of network (meters)
+		\item \textbf{Count of street segments}: Number of edges in undirected representation of network
+		\item \textbf{Node density}: \textit{n} (number of nodes in the network) divided by area in square kilometers
+		\item \textbf{Edge density}: Total edge length divided by area in square kilometers
+		\item \textbf{Street density}: Total street length divided by area in square kilometers
+		\item \textbf{Average circuity}: Total edge length divided by sum of great circle distances between the nodes incident to each edge
+		\item \textbf{Self-loop proportion}: Proportion of edges that have a single incident node (i.e., the edge links nodes u and v, and u = v)
+		\item \textbf{Average neighborhood degree}: Mean degree of nodes in the neighborhood of each node
+		\item \textbf{Mean average neighborhood degree}: Mean of all average neighborhood degrees in network
+		\item \textbf{Average weighted neighborhood degree}: Mean degree of nodes in the neighborhood of each node, weighted by edge length
+		\item \textbf{Mean average weighted neighborhood degree}: Mean of all weighted average neighborhood degrees in network
+		\item \textbf{Degree centrality}: Fraction of nodes that each node is connected to
+		\item \textbf{Average degree centrality}: Mean of all degree centralities in network
+		\item \textbf{Clustering coefficient}: Extent to which node's neighborhood forms a complete graph
+		\item \textbf{Weighted clustering coefficient}: Extent to which node's neighborhood forms a complete graph, weighted by edge length
+		\item \textbf{Average weighted clustering coefficient}: Mean of weighted clustering coefficients of all nodes in network
+		\item \textbf{PageRank}: Ranking of nodes based on structure of incoming edges
+		\item \textbf{Maximum PageRank}: Highest PageRank value of any node in the graph
+		\item \textbf{Maximum PageRank node}: Node with the maximum PageRank
+		\item \textbf{Minimum PageRank}: Lowest PageRank value of any node in the graph
+		\item \textbf{Minimum PageRank node}: Node with the minimum PageRank
+		\item \textbf{Node connectivity}: Minimum number of nodes that must be removed to disconnect network
+		\item \textbf{Average node connectivity}: Expected number of nodes that must be removed to	disconnect randomly selected pair of non-adjacent nodes
+		\item \textbf{Edge connectivity}: Minimum number of edges that must be removed to disconnect network
+		\item \textbf{Eccentricity}: For each node, the maximum distance from it to all	other nodes, weighted by length
+		\item \textbf{Diameter}: Maximum eccentricity of any node in network
+		\item \textbf{Radius}: Minimum eccentricity of any node in network
+		\item \textbf{Center}: Set of all nodes whose eccentricity equals the radius
+		\item \textbf{Periphery}: Set of all nodes whose eccentricity equals the diameter
+		\item \textbf{Closeness centrality}: For each node, the reciprocal of the sum of the distance from the node to all other nodes in the graph, weighted by length
+		\item \textbf{Average closeness centrality}: Mean of all the closeness centralities of all the nodes in network
+		\item \textbf{Betweenness centrality}: For each node, the fraction of all shortest paths that pass through the node
+		\item \textbf{Average betweenness centrality}: Mean of all the betweenness centralities of all the nodes in network
+	\end{itemize}                         
+	
+	\newpage
+	
+	\bibliography{../../bibliography/bibliography}
+	\bibliographystyle{ieeetr}
+\end{document}

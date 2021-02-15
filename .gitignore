@@ -1,3 +1,5 @@
 notebooks/.ipynb_checkpoints/
 notebooks/cache/
 notebooks/networks/merida-kanasin-road.graphml
+notebooks/networks/merida-kanasin-road-gephi.graphml
+notebooks/osmnx-folium.html

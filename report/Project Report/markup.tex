@@ -1,0 +1,36 @@
+% Required for strike through text
+\usepackage{ulem}
+% Required for color
+\usepackage[dvipsnames]{xcolor}
+% Required for highlighting
+\usepackage{soul}
+\usepackage{listings}
+\usepackage{dirtytalk}
+\usepackage{float}
+\usepackage{lmodern}  % for bold teletype font
+\usepackage{amsmath}  % for \hookrightarrow
+\usepackage{xcolor}   % for \textcolor
+
+\lstset{
+  basicstyle=\ttfamily,
+  columns=fullflexible,
+  frame=single,
+  breaklines=true,
+  postbreak=\mbox{\textcolor{red}{$\hookrightarrow$}\space},
+}
+
+% A general note on the margin command.
+\newcommand{\note}[1]{\marginpar{#1}}
+
+% Proofreading commands.
+\newcommand{\add}[1]{{\color{ForestGreen} {#1}}}
+\newcommand{\del}[1]{{\color{red} \sout{#1}}}
+\newcommand{\rep}[2]{\del{#1}\add{#2}}
+\newcommand{\comment}[2]{\hl{#1}{\color{blue} #2}}
+\newcommand{\melinacomment}[2]{\hl{#1}{\color{Magenta}#2}}
+
+
+% Todo notes. Done only makes todo disappear but allows to keep the todo in tex
+% code for reference.
+\newcommand{\todo}[1]{{{\color{red} \textbf{[TODO}}: {\color{red} #1}{\color{red} \textbf{]}}}}
+\newcommand{\done}[1]{}

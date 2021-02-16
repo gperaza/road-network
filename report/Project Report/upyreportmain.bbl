@@ -1,0 +1,219 @@
+\begin{thebibliography}{10}
+
+\bibitem{osm-wiki}
+Openstreetmap wiki.
+\newblock Retrieved from \url{https://wiki.openstreetmap.org/wiki}.
+
+\bibitem{osm_RNC_project}
+Mexico main road network import project - openstreetmap wiki.
+\newblock Retrieved from
+  \url{https://wiki.openstreetmap.org/wiki/Mexico_Main_Road_Network_Import_Project}.
+
+\bibitem{osm_MGN_project}
+Mexico's administrative divisions import project - openstreetmap wiki.
+\newblock Retrieved from
+  \url{https://wiki.openstreetmap.org/wiki/Mexico%27s_Administrative_Divisions_Import_Project}.
+
+\bibitem{barthelemy_spatial_2011}
+Marc Barthélemy.
+\newblock Spatial networks.
+\newblock {\em Physics Reports}, 499(1):1--101, February 2011.
+
+\bibitem{anderson_2020}
+Taylor Anderson and Suzana Dragićević.
+\newblock Complex spatial networks: Theory and geospatial applications.
+\newblock {\em Geography Compass}, 14, July 2020.
+
+\bibitem{boeing_osmnx_2017}
+Geoff Boeing.
+\newblock {OSMnx}: {New} methods for acquiring, constructing, analyzing, and
+  visualizing complex street networks.
+\newblock {\em Computers, Environment and Urban Systems}, 65:126--139,
+  September 2017.
+
+\bibitem{euler_1741}
+Leonhard Euler.
+\newblock Solutio problematis ad geometriam situs pertinentis (the solution to
+  a problem relating to the geometry position).
+\newblock {\em Commentarii Academie Scientiarum Imperialis Petropolitanae},
+  8:128--140, 1741.
+
+\bibitem{barabasi_2016}
+Albert-László Barabasi.
+\newblock {\em Network science}.
+\newblock Cambridge University Press, Glasgow, UK, 2016.
+
+\bibitem{porta_streets_2006}
+Sergio Porta, Paolo Crucitti, and Vito Latora.
+\newblock The network analysis of urban streets: A primal approach.
+\newblock {\em Environment and Planning B}, 33(5):705--725, 2006.
+
+\bibitem{ratti_spacesyntax_2004}
+Carlo Ratti.
+\newblock Space syntax: Some inconsistencies.
+\newblock {\em Environment and Planning B}, 31(4):487--499, 2004.
+
+\bibitem{lewis_2011}
+Ted~G. Lewis.
+\newblock {\em Network science: Theory and applications}.
+\newblock John Wiley \& Sons, Hoboken, NJ, September 2011.
+
+\bibitem{newman_2004}
+Mark. E.~J. Newman.
+\newblock Analysis of weighted networks.
+\newblock {\em Physical Review E}, 70(5), Nov 2004.
+
+\bibitem{newman_2010}
+Mark E.~J. Newman.
+\newblock {\em Networks: An introduction}.
+\newblock Oxford University Press, Oxford, England, 2010.
+
+\bibitem{menczer_fortunato_davis_2020}
+Filippo Menczer, Santo Fortunato, and Clayton~A. Davis.
+\newblock {\em A First Course in Network Science}.
+\newblock Cambridge University Press, 2020.
+
+\bibitem{watts_strogatz_1998}
+D.~J. Watts and S.~H. Strogatz.
+\newblock Collective dynamics of 'small-world' networks.
+\newblock {\em Nature}, 393(6684):440--442, 1998.
+
+\bibitem{giacomin-levinson_2015}
+David~J Giacomin and David~M Levinson.
+\newblock Road network circuity in metropolitan areas.
+\newblock {\em Environment and Planning B: Planning and Design},
+  42(6):1040--1053, 2015.
+
+\bibitem{urban-keitt_2001}
+Dean Urban and Timothy Keitt.
+\newblock Landscape connectivity: A graph-theoretic perspective.
+\newblock {\em Ecology}, 82:1205--1218, 05 2001.
+
+\bibitem{hage-harary_1995}
+Per Hage and Frank Harary.
+\newblock Eccentricity and centrality in networks.
+\newblock {\em Social Networks}, 17(1):57--63, 1995.
+
+\bibitem{beineke-oellermann-pippert_2002}
+Lowell Beineke, Ortrud Oellermann, and Raymond Pippert.
+\newblock The average connectivity of a graph.
+\newblock {\em Discrete Mathematics}, 252:31--45, 05 2002.
+
+\bibitem{dankelmann-oellermann_2003}
+Peter Dankelmann and Ortrud~R. Oellermann.
+\newblock Bounds on the average connectivity of a graph.
+\newblock {\em Discrete Applied Mathematics}, 129(2):305--318, 2003.
+
+\bibitem{huang_2016}
+Xiaoke Huang, Ye~Zhao, Chao Ma, Jing Yang, Xinyue Ye, and Chong Zhang.
+\newblock Trajgraph: A graph-based visual analytics approach to studying urban
+  network centralities using taxi trajectory data.
+\newblock {\em IEEE Transactions on Visualization and Computer Graphics},
+  22(1):160--169, January 2016.
+
+\bibitem{zhong_2017}
+Chen Zhong, Markus Schläpfer, Stefan Arisona, Michael Batty, Carlo Ratti, and
+  Gerhard Schmitt.
+\newblock Revealing centrality in the spatial structure of cities from human
+  activity patterns.
+\newblock {\em Urban Studies}, 54, 10 2015.
+
+\bibitem{freeman_1997}
+L.~C. Freeman.
+\newblock A set of measures of centrality based on betweenness.
+\newblock {\em Sociometry}, 40(1):35--41, 1997.
+
+\bibitem{ermagun-levinson_2017}
+Alireza Ermagun and David Levinson.
+\newblock An introduction to the network weight matrix: Introduction to the
+  network weight matrix.
+\newblock {\em Geographical Analysis}, 50, 07 2017.
+
+\bibitem{newman_2003}
+Mark~E. Newman.
+\newblock The structure and function of complex networks.
+\newblock {\em SIAM Review}, 45(2):167--256, 2003.
+
+\bibitem{jiang_2006}
+Bin Jiang.
+\newblock Ranking space for predicting human movement in an urban environment.
+\newblock {\em International Journal of Geographical Information Science}, 23,
+  12 2006.
+
+\bibitem{agryzkov_2012}
+Taras Agryzkov, José Oliver, Leandro Tortosa, and José-Francisco Vicent.
+\newblock An algorithm for ranking the nodes of an urban network based on the
+  concept of pagerank vector.
+\newblock {\em Applied Mathematics and Computation}, 219:2186--2193, 11 2012.
+
+\bibitem{gleich_2014}
+David Gleich.
+\newblock Pagerank beyond the web.
+\newblock {\em SIAM Review}, 57, 07 2014.
+
+\bibitem{chin-wen_2015}
+Wei Chien~Benny Chin and Tzai-Hung Wen.
+\newblock Geographically modified pagerank algorithms: Identifying the spatial
+  concentration of human movement in a geospatial network.
+\newblock {\em PLoS ONE}, 10, 10 2015.
+
+\bibitem{porta_2004}
+Sergio Porta, Paolo Crucitti, and Vito Latora.
+\newblock The network analysis of urban streets: A dual approach.
+\newblock 11 2004.
+
+\bibitem{porta_2006}
+Sergio Porta, Paolo Crucitti, and Vito Latora.
+\newblock The network analysis of urban streets: A primal approach.
+\newblock {\em Environment and Planning B: Planning and Design}, 33:705--725,
+  02 2006.
+
+\bibitem{porta_2010}
+S.~Porta, V.~Latora, and E.~Strano.
+\newblock {\em Networks in urban design. six years of research in multiple
+  centrality assessment}, pages 107--130.
+\newblock Springer, September 2010.
+
+\bibitem{crucitti_urban_2006}
+Paolo Crucitti, Vito Latora, and Sergio Porta.
+\newblock Centrality in network of urban streets.
+\newblock {\em Chaos (Woodbury, N.Y.)}, 16:015113, 04 2006.
+
+\bibitem{crucitti_spatial_2006}
+Paolo Crucitti, Vito Latora, and Sergio Porta.
+\newblock Centrality measures in spatial networks of urban streets.
+\newblock {\em Physical review. E, Statistical, nonlinear, and soft matter
+  physics}, 73:036125, 04 2006.
+
+\bibitem{sevtsuk_2012}
+Andres Sevtsuk and Michael Mekonnen.
+\newblock Urban network analysis. a new toolbox for arcgis.
+\newblock {\em Revue internationale de géomatique}, 22:287--305, 06 2012.
+
+\bibitem{fortunato_2010}
+Santo Fortunato.
+\newblock Community detection in graphs.
+\newblock {\em Physics Reports}, 486(3-5):75--174, 2010.
+
+\bibitem{barthelemy_2018}
+Marc Bathélemy.
+\newblock {\em Morphogenesis of spatial netwoks}.
+\newblock Springer International Publishing, Cham, Switzerland, 2018.
+
+\bibitem{newman-girvan_2004}
+Mark. E.~J. Newman and Michelle Girvan.
+\newblock Finding and evaluating community structure in networks.
+\newblock {\em Physical Review E}, 69(2), February 2004.
+
+\bibitem{hagberg-schult-swart-networkx_2008}
+Aric~A. Hagberg, Daniel~A. Schult, and Pieter~J. Swart.
+\newblock Exploring network structure, dynamics, and function using networkx.
+\newblock In Ga\"el Varoquaux, Travis Vaught, and Jarrod Millman, editors, {\em
+  Proceedings of the 7th Python in Science Conference}, pages 11 -- 15,
+  Pasadena, CA USA, 2008.
+
+\bibitem{networkx_doc}
+NetworkX developers.
+\newblock Networkx.
+
+\end{thebibliography}

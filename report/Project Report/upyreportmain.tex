@@ -1,0 +1,44 @@
+\documentclass{upy-report}
+\include{markup}
+%load any additional packages
+
+%end the preamble and start the document
+\begin{document}
+
+% \maketitle                  % create a title page from the preamble info
+\include{titlepages}
+\frontmatter
+\pagestyle{empty}
+
+\tableofcontents
+\listoffigures
+\listoftables
+
+\include{content/acknowledgements}  % include an acknowledgements.tex file
+\include{content/abstract}          % include the abstract
+
+\mainmatter
+\pagestyle{headings}
+
+%now include the files of latex for each of the chapters etc
+\include{content/chapter1}
+\include{content/chapter2}
+\include{content/chapter3}
+\include{content/chapter4}
+\include{content/conclusions}
+
+%now enable appendix numbering format and include any appendices
+%\appendix
+%\include{content/appendix1}
+
+\addcontentsline{toc}{chapter}{Bibliography}
+\bibliography{refs}        %use a bibtex bibliography file refs.bib
+\bibliographystyle{unsrt}
+
+\end{document}
+
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:

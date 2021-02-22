@@ -1,12 +1,7 @@
 \chapter{Theoretical framework}
 \label{cha:chapter 2}
 
-\section{OpenStreetMap}
-
-OpenStreetMap (OSM) is a collaborative worldwide mapping project that provides a free and publicly editable map of the world. In February 2021, there were over 7M registered contributors, as outlined on the OSM wiki \cite{osm-wiki}.
-
-In Mexico, OSM imported the 2015 INEGI's Marco Geoestadístico Nacional (MGN) and the Red Nacional de Caminos (RNC) road data during the years 2015 and 2016 as part of the two OSM projects: Mexico Main Road Network Import Project \cite{osm_RNC_project}, and Mexico's Administrative Divisions Import Project \cite{osm_MGN_project}. Additionally, individual contributions have been made from OSM members to keep updated and accurate the data.
-Acquiring the spatial data from OSM is made via an API, called Overpass, to retrieve any data in the database. However, its usage and syntax are somewhat difficult and there are other services available that can simplify the process.
+On this section we present concepts to support and further explain the technologies and process found on the Methodology and Development section. We present concepts regarding spatial networks and its analysis measures based on network theory; spatial data; as well as some tools and services that we use as a base for this work.
 
 \section{Spatial Networks}
 A network (or \textit{graph} in mathematics) is composed of nodes $N$ connected by links, or edges, $E$. Nodes represent entities in a network, such as cities, people, airports, and street intersections. Edges represent relationship between nodes, such as friendships among people, flights between airports, street roads, and so on. 
@@ -119,7 +114,64 @@ where $n_M$ is the number of modules of the partition, $l_s$ is the number of ed
 
 The above measures do not account for the distance between linked node pairs, an important measure that can be used to quantify real spatial networks embedded in geographic space. Distance can be measured in a variety of ways, the most common being Euclidean distance $d_E(i, j)$ or as the direct distance between two points. In contrast, the route distance $d_R(i, j)$ is computed by summing the geographical length of edges, which make up the shortest path between node $v_i$ and $v_j$ \cite{anderson_2020}.
 
+\section{Spatial Data}
+
+As our data is embedded in space, we need to understand its properties:
+
+A datum is a model of the Earth's shape. Sometimes the Earth is assumed to have an spherical shape who is described by two coordinates, latitude (north) and longitude (east). However the Earth is not a sphere; its shape is more like an ellipsoid. There are many possible approximations to this shape, which define their own latitude-longitude coordinate system. A coordinate system (CS) is a sequence of coordinate axes with specified units of measure, and its types are: ellipsoidal, Cartesian, affine, gravity-related, linear, spherical, polar, and cylindrical. A coordinate reference system (CRS) associates a CS with an object by mean of a datum (see Figure \ref{fig:crs-datum}) \cite{nikolli_CRS_2011}. Some are more accurate than others for particular regions of the Earth's surface.  If our data is notated in different datums then we will need to convert them into one standard format. The most common global datum is called WGS84 (World Geodetic System, 1984) \cite{fox_spatial_2018}.
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.3\textwidth]{Figures/coordinate system-datum_nikolli2011.png}
+	\caption{A coordinate reference system combines a coordinate system with a datum, which gives the relationship of the coordinate system to the surface and shape of the Earth. Retrieved from \cite{nikolli_CRS_2011}.
+		\label{fig:crs-datum}}
+\end{figure}
+
+A projection is the change of the representation of locations from one coordinate system to another. Sometimes it is more convenient to work with a flattened 2D projection of a datum rather than its spherical coordinates. With this, we project the coordinates into Cartesian $x$ and $y$ meters. We take $x=$ Easting and $y=$ Northing, in the order $(x, y)$, in meters from some origin. When we do a projection, we must make some compromise because it is not possible to make a perfect flat version of an ellipsoid surface. All projections of locations on the Earth into a two-dimensional plane are distortions as something always will be distorted \cite{lapaine_choosing_2017}. A good projection to use is one of the Universal Transverse Mercator (UTM) family. UTM splits the Earth's surface into state-sized regions, and defines separate projection for each one, to minimize the distortion there (see Figure \ref{fig:utm-zones}).
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.3\textwidth]{Figures/UTM-zones.png}
+	\caption{UTM zones across the continental United States. Source: \cite{chrismurf_2009}.
+		\label{fig:utm-zones}}
+\end{figure}
+
+With geographic data it is common to work in only two of the three dimensions. Two dimensional space support three basic types of spatial entity \cite{iso_simple_features}:
+
+\begin{itemize}
+	\item points - having a location
+	\item lines - comprising two or more locations in an ordered sequence
+	\item polygons - areas defined by three or more vertex locations in an ordered sequence
+\end{itemize}
+
+\section{Geographic Information Systems (GIS)}
+
+A Geographic Information System (GIS) is any system that is specifically designed to work with spatial data. GIS systems are implementations of some standard tasks, which may be present in as programming language libraries or functions, and/or as graphical user interfaces \cite{fox_spatial_2018}. Standard tasks include:
+
+\begin{itemize}
+	\item converting datums and projections
+	\item searching quickly for entities in particular regions
+	\item searching quickly for entities with spatial relationships to other entities
+	\item handling lots of data at large and small scales
+	\item geographical data visualizations
+	\item converting between standard spatial data file formats
+\end{itemize}
+
+\section{Spatial files}
+
+Shapefiles are a storage format for the Open Geo-spatial Consortium (OGC) definition: points, lines, and polygons. They are small collections of related files, usually stored together in a directory. The main file has a \textit{.shp} extension and stores the actual feature geometries. Other files that may appear along with it include \textit{.dbf} (associated non-spatial properties data), \textit{.shx} (indexing structure), and \textit{.prj} (datum/projection information) \cite{fox_spatial_2018}.
+
+GeoJSON and Well-Known Text (WKT) are alternatives for storing such data. Most GIS systems can convert between those formats.
+
+\section{OpenStreetMap}
+
+OpenStreetMap (OSM) is a collaborative worldwide mapping project that provides a free and publicly editable map of the world. In February 2021, there were over 7M registered contributors, as outlined on the OSM wiki \cite{osm-wiki}.
+
+In Mexico, OSM imported the 2015 INEGI's Marco Geoestadístico Nacional (MGN) and the Red Nacional de Caminos (RNC) road data during the years 2015 and 2016 as part of the two OSM projects: Mexico Main Road Network Import Project \cite{osm_RNC_project}, and Mexico's Administrative Divisions Import Project \cite{osm_MGN_project}. Additionally, individual contributions have been made from OSM members to keep updated and accurate the data.
+Acquiring the spatial data from OSM is made via an API, called Overpass, to retrieve any data in the database. However, its usage and syntax are somewhat difficult and there are other services available that can simplify the process.
+
 \section{Network Analysis Tools}
+
 
 \subsection{NetworkX}
 
@@ -130,10 +182,13 @@ In addition NetworkX can read and write various graphs formats (e.g., adjacency 
 
 \subsection{GeoPandas}
 
-
+GeoPandas 
 
 \subsection{OSMnx}
 
 \subsection{Gephi}
 
 \subsection{NetworKit}
+
+\subsection{PySAL}
+

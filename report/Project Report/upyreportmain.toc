@@ -9,20 +9,24 @@
 \contentsline {subsection}{\numberline {1.5.1}General}{1}{subsection.1.5.1}%
 \contentsline {subsection}{\numberline {1.5.2}Specific}{1}{subsection.1.5.2}%
 \contentsline {chapter}{\numberline {2}Theoretical framework}{3}{chapter.2}%
-\contentsline {section}{\numberline {2.1}OpenStreetMap}{3}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Spatial Networks}{3}{section.2.2}%
-\contentsline {section}{\numberline {2.3}Spatial Networks Analysis Measures}{4}{section.2.3}%
-\contentsline {section}{\numberline {2.4}Network Analysis Tools}{7}{section.2.4}%
-\contentsline {subsection}{\numberline {2.4.1}NetworkX}{7}{subsection.2.4.1}%
-\contentsline {subsection}{\numberline {2.4.2}GeoPandas}{7}{subsection.2.4.2}%
-\contentsline {subsection}{\numberline {2.4.3}OSMnx}{7}{subsection.2.4.3}%
-\contentsline {subsection}{\numberline {2.4.4}Gephi}{7}{subsection.2.4.4}%
-\contentsline {subsection}{\numberline {2.4.5}NetworKit}{7}{subsection.2.4.5}%
-\contentsline {chapter}{\numberline {3}Methodology and development}{9}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Methodology}{9}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Deployment}{9}{section.3.2}%
-\contentsline {chapter}{\numberline {4}Results}{11}{chapter.4}%
-\contentsline {chapter}{\numberline {5}Conclusions and recommendations}{13}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Conclusion}{13}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Recommendations}{13}{section.5.2}%
-\contentsline {chapter}{Bibliography}{14}{section.5.2}%
+\contentsline {section}{\numberline {2.1}Spatial Networks}{3}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Spatial Networks Analysis Measures}{4}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Spatial Data}{7}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Geographic Information Systems (GIS)}{8}{section.2.4}%
+\contentsline {section}{\numberline {2.5}Spatial files}{8}{section.2.5}%
+\contentsline {section}{\numberline {2.6}OpenStreetMap}{8}{section.2.6}%
+\contentsline {section}{\numberline {2.7}Network Analysis Tools}{9}{section.2.7}%
+\contentsline {subsection}{\numberline {2.7.1}NetworkX}{9}{subsection.2.7.1}%
+\contentsline {subsection}{\numberline {2.7.2}GeoPandas}{9}{subsection.2.7.2}%
+\contentsline {subsection}{\numberline {2.7.3}OSMnx}{9}{subsection.2.7.3}%
+\contentsline {subsection}{\numberline {2.7.4}Gephi}{9}{subsection.2.7.4}%
+\contentsline {subsection}{\numberline {2.7.5}NetworKit}{9}{subsection.2.7.5}%
+\contentsline {subsection}{\numberline {2.7.6}PySAL}{9}{subsection.2.7.6}%
+\contentsline {chapter}{\numberline {3}Methodology and development}{11}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Methodology}{11}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Deployment}{11}{section.3.2}%
+\contentsline {chapter}{\numberline {4}Results}{13}{chapter.4}%
+\contentsline {chapter}{\numberline {5}Conclusions and recommendations}{15}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Conclusion}{15}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Recommendations}{15}{section.5.2}%
+\contentsline {chapter}{Bibliography}{16}{section.5.2}%

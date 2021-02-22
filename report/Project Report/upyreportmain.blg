@@ -24,45 +24,46 @@ Name 1 in "Watts, D. J., and Strogatz, S. H." has a comma at the end for entry w
 while executing---line 944 of file unsrt.bst
 Warning--empty journal in porta_2004
 Warning--can't use both author and editor fields in porta_2010
-You've used 40 entries,
+Warning--empty author in iso_simple_features
+You've used 45 entries,
             1791 wiz_defined-function locations,
-            691 strings with 9387 characters,
-and the built_in function-call counts, 7964 in all, are:
-= -- 694
-> -- 307
-< -- 2
-+ -- 121
-- -- 81
-* -- 529
-:= -- 1268
-add.period$ -- 116
-call.type$ -- 40
-change.case$ -- 34
+            716 strings with 9980 characters,
+and the built_in function-call counts, 8842 in all, are:
+= -- 778
+> -- 333
+< -- 4
++ -- 132
+- -- 87
+* -- 567
+:= -- 1400
+add.period$ -- 131
+call.type$ -- 45
+change.case$ -- 38
 chr.to.int$ -- 0
-cite$ -- 42
-duplicate$ -- 363
-empty$ -- 834
-format.name$ -- 81
-if$ -- 1790
+cite$ -- 48
+duplicate$ -- 414
+empty$ -- 932
+format.name$ -- 87
+if$ -- 2000
 int.to.chr$ -- 0
-int.to.str$ -- 40
-missing$ -- 42
-newline$ -- 199
-num.names$ -- 39
-pop$ -- 108
+int.to.str$ -- 45
+missing$ -- 45
+newline$ -- 222
+num.names$ -- 44
+pop$ -- 129
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 162
+skip$ -- 186
 stack$ -- 0
-substring$ -- 477
-swap$ -- 58
-text.length$ -- 2
+substring$ -- 501
+swap$ -- 70
+text.length$ -- 4
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 2
-while$ -- 66
-width$ -- 42
-write$ -- 424
+warning$ -- 3
+while$ -- 73
+width$ -- 47
+write$ -- 476
 (There were 4 error messages)

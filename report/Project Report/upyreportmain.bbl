@@ -1,18 +1,13 @@
 \begin{thebibliography}{10}
 
-\bibitem{osm-wiki}
-Openstreetmap wiki.
-\newblock Retrieved from \url{https://wiki.openstreetmap.org/wiki}.
+\bibitem{nikolli_CRS_2011}
+Pal Nikolli and Bashkim Idrizi.
+\newblock Coordinate reference systems used in albania to date.
+\newblock {\em FIG Working Week 2011, Morocco}, 05 2011.
 
-\bibitem{osm_RNC_project}
-Mexico main road network import project - openstreetmap wiki.
-\newblock Retrieved from
-  \url{https://wiki.openstreetmap.org/wiki/Mexico_Main_Road_Network_Import_Project}.
-
-\bibitem{osm_MGN_project}
-Mexico's administrative divisions import project - openstreetmap wiki.
-\newblock Retrieved from
-  \url{https://wiki.openstreetmap.org/wiki/Mexico%27s_Administrative_Divisions_Import_Project}.
+\bibitem{chrismurf_2009}
+Chrismurf.
+\newblock Utm-zones-usa.svg, 2009.
 
 \bibitem{barthelemy_spatial_2011}
 Marc Barthélemy.
@@ -204,6 +199,37 @@ Marc Bathélemy.
 Mark. E.~J. Newman and Michelle Girvan.
 \newblock Finding and evaluating community structure in networks.
 \newblock {\em Physical Review E}, 69(2), February 2004.
+
+\bibitem{fox_spatial_2018}
+Charles Fox.
+\newblock Spatial {Data}.
+\newblock In {\em Data {Science} for {Transport}}, pages 57--74. Springer
+  International Publishing, Cham, 2018.
+
+\bibitem{lapaine_choosing_2017}
+Miljenko Lapaine and E.~Lynn Usery, editors.
+\newblock {\em Choosing a {Map} {Projection}}.
+\newblock Lecture {Notes} in {Geoinformation} and {Cartography}. Springer
+  International Publishing, Cham, 2017.
+
+\bibitem{iso_simple_features}
+Geographic information - simple feature access - part 1: Common architecture.
+\newblock Standard ISO 19125-1:2004, International Organization for
+  Standardization, 2004.
+
+\bibitem{osm-wiki}
+Openstreetmap wiki.
+\newblock Retrieved from \url{https://wiki.openstreetmap.org/wiki}.
+
+\bibitem{osm_RNC_project}
+Mexico main road network import project - openstreetmap wiki.
+\newblock Retrieved from
+  \url{https://wiki.openstreetmap.org/wiki/Mexico_Main_Road_Network_Import_Project}.
+
+\bibitem{osm_MGN_project}
+Mexico's administrative divisions import project - openstreetmap wiki.
+\newblock Retrieved from
+  \url{https://wiki.openstreetmap.org/wiki/Mexico%27s_Administrative_Divisions_Import_Project}.
 
 \bibitem{hagberg-schult-swart-networkx_2008}
 Aric~A. Hagberg, Daniel~A. Schult, and Pieter~J. Swart.

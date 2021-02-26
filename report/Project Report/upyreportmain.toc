@@ -19,9 +19,8 @@
 \contentsline {subsection}{\numberline {2.7.1}NetworkX}{9}{subsection.2.7.1}%
 \contentsline {subsection}{\numberline {2.7.2}GeoPandas}{9}{subsection.2.7.2}%
 \contentsline {subsection}{\numberline {2.7.3}OSMnx}{9}{subsection.2.7.3}%
-\contentsline {subsection}{\numberline {2.7.4}Gephi}{9}{subsection.2.7.4}%
-\contentsline {subsection}{\numberline {2.7.5}NetworKit}{9}{subsection.2.7.5}%
-\contentsline {subsection}{\numberline {2.7.6}PySAL}{9}{subsection.2.7.6}%
+\contentsline {subsection}{\numberline {2.7.4}NetworKit}{9}{subsection.2.7.4}%
+\contentsline {subsection}{\numberline {2.7.5}PySAL}{10}{subsection.2.7.5}%
 \contentsline {chapter}{\numberline {3}Methodology and development}{11}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Methodology}{11}{section.3.1}%
 \contentsline {section}{\numberline {3.2}Deployment}{11}{section.3.2}%

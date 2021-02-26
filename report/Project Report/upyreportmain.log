@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.1.5)  22 FEB 2021 01:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.1.5)  26 FEB 2021 12:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -806,17 +806,17 @@ en already used, duplicate ignored
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.172 
-       <./Figures/UTM-zones.png>]) [9]
+       <./Figures/UTM-zones.png>] [9]) [10]
 \openout2 = `content/chapter3.aux'.
 
- (./content/chapter3.tex [10
+ (./content/chapter3.tex
+chapter 3.
+) [11
 
 
 
 
 ]
-chapter 3.
-) [11]
 \openout2 = `content/chapter4.aux'.
 
  (./content/chapter4.tex [12
@@ -840,25 +840,26 @@ chapter 5.
 
 
 
-] [17] [18]
+]
 LaTeX Font Info:    Trying to load font information for OT1+lmtt on input line 
-222.
-
-(/usr/share/texmf/tex/latex/lm/ot1lmtt.fd
+13.
+ (/usr/share/texmf/tex/latex/lm/ot1lmtt.fd
 File: ot1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-Underfull \hbox (badness 10000) in paragraph at lines 230--233
+[17] [18]
+Underfull \hbox (badness 10000) in paragraph at lines 233--236
 \OT1/lmr/m/n/10.95 from []$\OT1/lmtt/m/n/10.95 https : / / wiki . openstreetmap
  . org / wiki / Mexico % 27s _ Administrative _
  []
 
-)
+[19])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 38.
- [19]
+ [20]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 38.
- (./upyreportmain.aux (./titlepages.aux) (./content/acknowledgements.aux) (./co
-ntent/abstract.aux) (./content/chapter1.aux) (./content/chapter2.aux)
-(./content/chapter3.aux) (./content/chapter4.aux) (./content/conclusions.aux))
+ (./upyreportmain.aux (./titlepages.aux)
+(./content/acknowledgements.aux) (./content/abstract.aux)
+(./content/chapter1.aux) (./content/chapter2.aux) (./content/chapter3.aux)
+(./content/chapter4.aux) (./content/conclusions.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 38.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 38.
 Package rerunfilecheck Info: File `upyreportmain.out' has not changed.
@@ -866,13 +867,13 @@ Package rerunfilecheck Info: File `upyreportmain.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 38.
  ) 
 Here is how much of TeX's memory you used:
- 12945 strings out of 481239
- 213506 string characters out of 5920378
- 602448 words of memory out of 5000000
- 27781 multiletter control sequences out of 15000+600000
+ 12964 strings out of 481239
+ 213779 string characters out of 5920378
+ 602541 words of memory out of 5000000
+ 27790 multiletter control sequences out of 15000+600000
  585739 words of font info for 58 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 50i,9n,76p,10125b,450s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 50i,9n,76p,10125b,452s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-rmtt.enc}{/usr/share/texmf/fonts/enc/
 dvips/lm/lm-ts1.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/sh
 are/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm
@@ -889,10 +890,10 @@ o10.pfb></usr/share/texmf/fonts/type1/public/lm/lmss10.pfb></usr/share/texmf/fo
 nts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10
 .pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf/fonts/
 type1/public/lm/lmtt10.pfb>
-Output written on upyreportmain.pdf (31 pages, 729443 bytes).
+Output written on upyreportmain.pdf (32 pages, 735691 bytes).
 PDF statistics:
- 542 PDF objects out of 1000 (max. 8388607)
- 479 compressed objects within 5 object streams
- 127 named destinations out of 1000 (max. 500000)
- 280 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 567 PDF objects out of 1000 (max. 8388607)
+ 502 compressed objects within 6 object streams
+ 137 named destinations out of 1000 (max. 500000)
+ 272 words of extra memory for PDF output out of 10000 (max. 10000000)
 

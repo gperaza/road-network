@@ -16,6 +16,12 @@ I was expecting a `,' or a `}'---line 480 of file refs.bib
  :  journal = {NetworkX documentation},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
+Warning--entry type for "geopandas" isn't style-file defined
+--line 539 of file refs.bib
+Warning--entry type for "pandas" isn't style-file defined
+--line 550 of file refs.bib
+Warning--entry type for "matplotlib" isn't style-file defined
+--line 595 of file refs.bib
 Name 1 in "Porta, Sergio, and Crucitti, Paolo, and Latora, Vito" has a comma at the end for entry porta_streets_2006
 while executing---line 944 of file unsrt.bst
 Name 2 in "Porta, Sergio, and Crucitti, Paolo, and Latora, Vito" has a comma at the end for entry porta_streets_2006
@@ -25,45 +31,45 @@ while executing---line 944 of file unsrt.bst
 Warning--empty journal in porta_2004
 Warning--can't use both author and editor fields in porta_2010
 Warning--empty author in iso_simple_features
-You've used 45 entries,
+You've used 55 entries,
             1791 wiz_defined-function locations,
-            716 strings with 9980 characters,
-and the built_in function-call counts, 8842 in all, are:
-= -- 778
-> -- 333
-< -- 4
-+ -- 132
-- -- 87
-* -- 567
-:= -- 1400
-add.period$ -- 131
-call.type$ -- 45
-change.case$ -- 38
+            763 strings with 11128 characters,
+and the built_in function-call counts, 10555 in all, are:
+= -- 915
+> -- 404
+< -- 5
++ -- 160
+- -- 105
+* -- 637
+:= -- 1653
+add.period$ -- 156
+call.type$ -- 55
+change.case$ -- 48
 chr.to.int$ -- 0
-cite$ -- 48
-duplicate$ -- 414
-empty$ -- 932
-format.name$ -- 87
-if$ -- 2000
+cite$ -- 58
+duplicate$ -- 488
+empty$ -- 1140
+format.name$ -- 105
+if$ -- 2402
 int.to.chr$ -- 0
-int.to.str$ -- 45
-missing$ -- 45
-newline$ -- 222
-num.names$ -- 44
-pop$ -- 129
+int.to.str$ -- 55
+missing$ -- 48
+newline$ -- 267
+num.names$ -- 56
+pop$ -- 185
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 186
+skip$ -- 239
 stack$ -- 0
-substring$ -- 501
-swap$ -- 70
-text.length$ -- 4
+substring$ -- 560
+swap$ -- 90
+text.length$ -- 5
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 3
-while$ -- 73
-width$ -- 47
-write$ -- 476
+while$ -- 89
+width$ -- 57
+write$ -- 569
 (There were 4 error messages)

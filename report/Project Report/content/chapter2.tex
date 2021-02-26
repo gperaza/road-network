@@ -172,6 +172,8 @@ Acquiring the spatial data from OSM is made via an API, called Overpass, to retr
 
 \section{Network Analysis Tools}
 
+All the tools here presented are Python language packages or libraries. Python was chosen because it is a popular language, free, open-source, easy for beginners, powerful, and it gives us the ability to work interactively and easy integration with other Python libraries.
+
 
 \subsection{NetworkX}
 
@@ -182,13 +184,28 @@ In addition NetworkX can read and write various graphs formats (e.g., adjacency 
 
 \subsection{GeoPandas}
 
-GeoPandas 
+Python's spatial data frame library is called GeoPandas \cite{geopandas}. GeoPandas is an open source project that allows easier manipulation of geospatial data. It extends the datatypes used by pandas (data series and data frames) \cite{pandas, mckinney-proc-scipy-2010} to allow spatial operations on geometric types (points, lines, polygons). It uses shapely for geometric operations \cite{shapely}, fiona for spatial data file access \cite{fiona}, as well as descartes \cite{descartes} and matplotlib \cite{matplotlib, Hunter:2007} for plotting.
 
 \subsection{OSMnx}
 
-\subsection{Gephi}
+OSMnx \cite{boeing_osmnx_2017} is a free, open-source Python package to download spatial data from OpenStreetMap and model, project, visualize, and analyze real-world street networks (e.g., walking, driving, or biking network) including node elevations and street grades. It also allow us to save the street network as shapefiles, GeoPackages, and GraphML files for later use.
+
+OSMnx is built on top of GeoPandas, NetworkX, and matplotlib and interacts with OpenStreetMap's APIs. Thanks to that we can conduct topological and spatial analyses that OSMnx automatizes for calculating dozens of indicators, as well as calculating and visualizing the street network, street bearings and orientations, shortest-path routes.
+
 
 \subsection{NetworKit}
 
+NetworKit is an open-source toolkit for large-scale network analysis. It is similar to NetworkX with the difference that many of its algorithms are parallel and scalable. This can be done because it is written in C++ for performance-aware algorithms, often using OpenMP for shared-memory parallelism \cite{staudt2015networkit}. 
+
 \subsection{PySAL}
 
+Python Spatial Analysis Library (PySAL) is an open-source, cross-platform library for geospatial data science and spatial analysis \cite{pysal2007}.
+
+PySAL is a family of packages and is divided into four components:
+
+\begin{itemize}
+	\item Explore -- It includes modules to conduct exploratory analysis of spatial and spatio-temporal data, focused on enabling better understanding of patterns in the data.
+	\item Model -- It focuses on confirmatory analysis to model spatial relationships in data with a variety of models.
+	\item Viz -- It supports the creation of geovisualizations and visual representations of outputs from a variety of spatial analyses. 
+	\item Lib -- It help us to solve a wide variety of computational geometry problems including graph construction from polygonal lattices, lines, and points, construction and interactive editing of spatial weights matrices and graphs, computation of spatial relationships, and reading and writing of spatial vector data.
+\end{itemize}

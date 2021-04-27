@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.1.5)  26 APR 2021 22:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.1.5)  27 APR 2021 02:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -795,14 +795,14 @@ Package pdftex.def Info: Figures/logo.png  used on input line 7.
  [1
 
 
-] [2
-
-
-] (./upyreportmain.lof)
+] [2] (./upyreportmain.lof)
 \tf@lof=\write5
 \openout5 = `upyreportmain.lof'.
 
- [3] [4
+ [3
+
+
+] [4
 
 
 ]
@@ -884,14 +884,14 @@ l.1 \chapter
 ]
 chapter 2.
 [3] [4] [5] [6]
-<Figures/coordinate system-datum_nikolli2011.png, id=262, 254.9525pt x 257.9637
+<Figures/coordinate system-datum_nikolli2011.png, id=268, 254.9525pt x 257.9637
 5pt>
 File: Figures/coordinate system-datum_nikolli2011.png Graphic file (type png)
 <use Figures/coordinate system-datum_nikolli2011.png>
 Package pdftex.def Info: Figures/coordinate system-datum_nikolli2011.png  used 
 on input line 125.
 (pdftex.def)             Requested size: 130.08731pt x 131.63062pt.
-<Figures/UTM-zones.png, id=267, 1284.8pt x 963.6pt>
+<Figures/UTM-zones.png, id=273, 1284.8pt x 963.6pt>
 File: Figures/UTM-zones.png Graphic file (type png)
 <use Figures/UTM-zones.png>
 Package pdftex.def Info: Figures/UTM-zones.png  used on input line 134.
@@ -922,6 +922,20 @@ l.172
 
  (./content/chapter3.tex
 chapter 3.
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2019/09/10 1.8c listings language file
+)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2019/09/10 1.8c listings language file
+)
+LaTeX Font Info:    Trying to load font information for TS1+lmtt on input line 
+23.
+
+(/usr/share/texmf/tex/latex/lm/ts1lmtt.fd
+File: ts1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Font shape `OT1/lmtt/bx/n' in size <10.95> not available
+(Font)              Font shape `OT1/lmtt/b/n' tried instead on input line 24.
 ) [11
 
 
@@ -930,7 +944,8 @@ chapter 3.
 ]
 \openout2 = `content/chapter4.aux'.
 
- (./content/chapter4.tex [12
+ (./content/chapter4.tex
+[12
 
 
 
@@ -994,14 +1009,26 @@ chapter 5.
 
 
 
-] [17] [18]
+]
+Underfull \hbox (badness 10000) in paragraph at lines 70--73
+[]\OT1/lmr/m/n/10.95 Filippo Menczer, Santo For-tu-nato, and Clay-ton A. Davis.
+
+ []
+
+[17] [18]
+Underfull \hbox (badness 2990) in paragraph at lines 228--231
+[]\OT1/lmr/m/n/10.95 Mexico Main Road Net-work Im-port Project - Open-StreetMap
+ Wiki.  Re-
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 233--236
 \OT1/lmr/m/n/10.95 from []$\OT1/lmtt/m/n/10.95 https : / / wiki . openstreetmap
  . org / wiki / Mexico % 27s _ Administrative _
  []
 
 [19]
-Overfull \hbox (29.77356pt too wide) in paragraph at lines 317--321
+Overfull \hbox (29.77356pt too wide) in paragraph at lines 312--316
 []\OT1/lmr/m/n/10.95 Geoff Boe-ing.  |   [],
  []
 
@@ -1019,38 +1046,35 @@ Package rerunfilecheck Info: File `upyreportmain.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 41.
  ) 
 Here is how much of TeX's memory you used:
- 15909 strings out of 481239
- 295618 string characters out of 5920378
- 675651 words of memory out of 5000000
- 30676 multiletter control sequences out of 15000+600000
- 617042 words of font info for 89 fonts, out of 8000000 for 9000
+ 16349 strings out of 481239
+ 299833 string characters out of 5920378
+ 858692 words of memory out of 5000000
+ 31094 multiletter control sequences out of 15000+600000
+ 617657 words of font info for 91 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 50i,12n,76p,10125b,847s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{subsection.2.7.5} has been referenced but does no
-t exist, replaced by a fixed one
-
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-rmtt.enc}{/usr/share/texmf/fonts/enc/dv
-ips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ts1.enc}{/usr/share/te
-xmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ma
-thsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}</usr/share/texmf/f
-onts/type1/public/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.
-pfb></usr/share/texmf/fonts/type1/public/lm/lmbxi10.pfb></usr/share/texmf/fonts
-/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi10.pfb>
-</usr/share/texmf/fonts/type1/public/lm/lmmi6.pfb></usr/share/texmf/fonts/type1
-/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/sh
-are/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/
-lm/lmr17.pfb></usr/share/texmf/fonts/type1/public/lm/lmr6.pfb></usr/share/texmf
-/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pf
-b></usr/share/texmf/fonts/type1/public/lm/lmr9.pfb></usr/share/texmf/fonts/type
-1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmro10.pfb></usr
-/share/texmf/fonts/type1/public/lm/lmss10.pfb></usr/share/texmf/fonts/type1/pub
-lic/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/sh
-are/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf/fonts/type1/public/
-lm/lmtt10.pfb>
-Output written on upyreportmain.pdf (32 pages, 801130 bytes).
+ 50i,12n,76p,10125b,1427s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dv
+ips/lm/lm-rmtt.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ts1.enc}{/usr/share/
+texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-
+mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}</usr/share/texmf
+/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx1
+2.pfb></usr/share/texmf/fonts/type1/public/lm/lmbxi10.pfb></usr/share/texmf/fon
+ts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi10.pf
+b></usr/share/texmf/fonts/type1/public/lm/lmmi6.pfb></usr/share/texmf/fonts/typ
+e1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/
+share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/publi
+c/lm/lmr17.pfb></usr/share/texmf/fonts/type1/public/lm/lmr6.pfb></usr/share/tex
+mf/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.
+pfb></usr/share/texmf/fonts/type1/public/lm/lmr9.pfb></usr/share/texmf/fonts/ty
+pe1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmro10.pfb></u
+sr/share/texmf/fonts/type1/public/lm/lmss10.pfb></usr/share/texmf/fonts/type1/p
+ublic/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/
+share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf/fonts/type1/publi
+c/lm/lmtk10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb>
+Output written on upyreportmain.pdf (32 pages, 826938 bytes).
 PDF statistics:
- 608 PDF objects out of 1000 (max. 8388607)
- 540 compressed objects within 6 object streams
- 147 named destinations out of 1000 (max. 500000)
- 280 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 646 PDF objects out of 1000 (max. 8388607)
+ 577 compressed objects within 6 object streams
+ 158 named destinations out of 1000 (max. 500000)
+ 312 words of extra memory for PDF output out of 10000 (max. 10000000)
 

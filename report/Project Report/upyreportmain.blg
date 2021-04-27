@@ -36,34 +36,34 @@ Warning--can't use both author and editor fields in Boeing2019-morphology
 Warning--can't use both author and editor fields in Boeing2020-urban-form-osm
 You've used 60 entries,
             1791 wiz_defined-function locations,
-            791 strings with 11975 characters,
-and the built_in function-call counts, 11938 in all, are:
-= -- 1054
-> -- 424
+            792 strings with 11921 characters,
+and the built_in function-call counts, 11882 in all, are:
+= -- 1051
+> -- 414
 < -- 8
-+ -- 170
-- -- 110
-* -- 711
-:= -- 1826
-add.period$ -- 170
++ -- 167
+- -- 107
+* -- 706
+:= -- 1810
+add.period$ -- 169
 call.type$ -- 60
 change.case$ -- 50
 chr.to.int$ -- 0
 cite$ -- 66
 duplicate$ -- 564
 empty$ -- 1290
-format.name$ -- 110
-if$ -- 2744
+format.name$ -- 107
+if$ -- 2735
 int.to.chr$ -- 0
 int.to.str$ -- 60
 missing$ -- 55
-newline$ -- 291
-num.names$ -- 61
-pop$ -- 211
+newline$ -- 290
+num.names$ -- 60
+pop$ -- 212
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 294
+skip$ -- 295
 stack$ -- 0
 substring$ -- 681
 swap$ -- 126
@@ -72,7 +72,7 @@ text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 6
-while$ -- 103
+while$ -- 102
 width$ -- 62
-write$ -- 622
+write$ -- 620
 (There were 4 error messages)

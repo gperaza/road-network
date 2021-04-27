@@ -19,7 +19,7 @@ Marc Barthélemy.
 
 \bibitem{anderson_2020}
 Taylor Anderson and Suzana Dragićević.
-\newblock Complex spatial networks: Theory and geospatial applications.
+\newblock {Complex spatial networks: Theory and geospatial applications}.
 \newblock {\em Geography Compass}, 14, July 2020.
 
 \bibitem{boeing_osmnx_2017}
@@ -43,17 +43,17 @@ Albert-László Barabasi.
 
 \bibitem{porta_streets_2006}
 Sergio Porta, Paolo Crucitti, and Vito Latora.
-\newblock The network analysis of urban streets: A primal approach.
+\newblock {The network analysis of urban streets: A primal approach}.
 \newblock {\em Environment and Planning B}, 33(5):705--725, 2006.
 
 \bibitem{ratti_spacesyntax_2004}
 Carlo Ratti.
-\newblock Space syntax: Some inconsistencies.
+\newblock {Space syntax: Some inconsistencies}.
 \newblock {\em Environment and Planning B}, 31(4):487--499, 2004.
 
 \bibitem{lewis_2011}
 Ted~G. Lewis.
-\newblock {\em Network science: Theory and applications}.
+\newblock {\em {Network science: Theory and applications}}.
 \newblock John Wiley \& Sons, Hoboken, NJ, September 2011.
 
 \bibitem{newman_2004}
@@ -63,17 +63,17 @@ Mark. E.~J. Newman.
 
 \bibitem{newman_2010}
 Mark E.~J. Newman.
-\newblock {\em Networks: An introduction}.
+\newblock {\em {Networks: An introduction}}.
 \newblock Oxford University Press, Oxford, England, 2010.
 
 \bibitem{menczer_fortunato_davis_2020}
 Filippo Menczer, Santo Fortunato, and Clayton~A. Davis.
-\newblock {\em A First Course in Network Science}.
+\newblock {\em {A First Course in Network Science}}.
 \newblock Cambridge University Press, 2020.
 
 \bibitem{watts_strogatz_1998}
 D.~J. Watts and S.~H. Strogatz.
-\newblock Collective dynamics of 'small-world' networks.
+\newblock {Collective dynamics of 'small-world' networks}.
 \newblock {\em Nature}, 393(6684):440--442, 1998.
 
 \bibitem{giacomin-levinson_2015}
@@ -221,16 +221,16 @@ Miljenko Lapaine and E.~Lynn Usery, editors.
   Standardization, 2004.
 
 \bibitem{osm-wiki}
-Openstreetmap wiki.
+{OpenStreetMap Wiki}.
 \newblock Retrieved from \url{https://wiki.openstreetmap.org/wiki}.
 
 \bibitem{osm_RNC_project}
-Mexico main road network import project - openstreetmap wiki.
+{Mexico Main Road Network Import Project - OpenStreetMap Wiki}.
 \newblock Retrieved from
   \url{https://wiki.openstreetmap.org/wiki/Mexico_Main_Road_Network_Import_Project}.
 
 \bibitem{osm_MGN_project}
-Mexico's administrative divisions import project - openstreetmap wiki.
+{Mexico's Administrative Divisions Import Project - OpenStreetMap Wiki}.
 \newblock Retrieved from
   \url{https://wiki.openstreetmap.org/wiki/Mexico%27s_Administrative_Divisions_Import_Project}.
 
@@ -281,11 +281,6 @@ J.~D. Hunter.
 \newblock {Matplotlib: A 2D graphics environment}.
 \newblock {\em Computing in Science \& Engineering}, 9(3):90--95, 2007.
 
-\bibitem{staudt2015networkit}
-Christian~L. Staudt, Aleksejs Sazonovs, and Henning Meyerhenke.
-\newblock {NetworKit: A Tool Suite for Large-scale Complex Network Analysis},
-  2015.
-
 \bibitem{pysal2007}
 Sergio~J. Rey and Luc Anselin.
 \newblock {PySAL: A Python Library of Spatial Analytical Methods}.
@@ -296,10 +291,11 @@ David O’Sullivan.
 \newblock {\em {Spatial Network Analysis}}, pages 1253--1273.
 \newblock 07 2014.
 
-\bibitem{boeing_multi-scale_2018}
+\bibitem{Boeing2019-morphology}
 Geoff Boeing.
-\newblock A multi-scale analysis of 27,000 urban street networks: {Every} {US}
-  city, town, urbanized area, and {Zillow} neighborhood, August 2018.
+\newblock {\em The Morphology and Circuity of Walkable and Drivable Street
+  Networks}, pages 271--287.
+\newblock Springer International Publishing, Cham, 2019.
 
 \bibitem{boeing2020-planarity}
 Geoff Boeing.
@@ -307,16 +303,18 @@ Geoff Boeing.
 \newblock {\em Environment and Planning B: Urban Analytics and City Science},
   47(5):855--869, 2020.
 
-\bibitem{Boeing2019-morphology}
+\bibitem{boeing_multi-scale_2018}
 Geoff Boeing.
-\newblock {\em The Morphology and Circuity of Walkable and Drivable Street
-  Networks}, pages 271--287.
-\newblock Springer International Publishing, Cham, 2019.
+\newblock A multi-scale analysis of 27,000 urban street networks: {Every} {US}
+  city, town, urbanized area, and {Zillow} neighborhood, August 2018.
 
 \bibitem{Boeing2020-urban-form-osm}
 Geoff Boeing.
 \newblock {\em {Exploring Urban Form through OpenStreetMap Data: A Visual
   Introduction}}, pages 167--184.
 \newblock Routledge, Abingdon, England, 2020.
+
+\bibitem{anaconda}
+{Anaconda Software Distribution}, 2021.
 
 \end{thebibliography}

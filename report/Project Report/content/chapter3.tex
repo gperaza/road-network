@@ -1,10 +1,39 @@
 \chapter{Methodology and development}
 \label{cha:chapter3}
 
+\section{The Repository}
 
-\section{Methodology}
+This work was done in Jupyter notebook format in a GitHub repository (\url{https://github.com/gperaza/road-network}). This repository's root contains an environment definition file and a notebooks folder. Within that folder, the repository contains one folder for the work done in Mérida, Yucatán, and other folder for the different cities in México that are beyond the scope of this report. The following notebooks are included in the Mérida folder:
 
+\begin{enumerate}
+	\item Data preparation, downloading/modeling and calculating network stats of Mérida's road network and its urban AGEBs.
+	\item Analysis of the road network of Mérida and its urban AGEBs.
+	\item Cluster analysis of the urban AGEBs.
+\end{enumerate}
 
-\section{Deployment}
+To run the code examples in this resource repository, we simply run everything in a pre-built Anaconda environment. This process is detailed in the following section.
+
+\section{The Environment}
+
+This project's repository contains an Anaconda environment file (i.e., .yml) for running the Jupyter notebooks on any computer. Anaconda \cite{anaconda} is a data science platform that facilitates package management and deployment. It is available for Windows, Linux and macOS. We use the Individual Edition, which is the open-source distribution of Anaconda.
+
+First, download and install Anaconda Individual Edition. Once it is installed and running on your computer, run the following code in the terminal window:
+
+\begin{lstlisting}[language=bash]
+$ conda config --add channels conda-forge
+$ conda env create --file road-network-project.yml
+$ conda activate road-network-project
+$ jupyter lab
+\end{lstlisting}
+
+Once you are in the active environment, open your computer's web browser and visit \url{http://localhost:8888} to access Jupyter Lab and open this work's notebook files.
+
+\section{Data Collection}
+
+\section{Data Preparation}
+
+\section{Data Exploration}
+
+\section{Data Modeling}
 
 

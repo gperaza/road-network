@@ -21,6 +21,7 @@
 \contentsline {subsection}{\numberline {2.7.3}OSMnx}{9}{subsection.2.7.3}%
 \contentsline {subsection}{\numberline {2.7.4}NetworKit}{9}{subsection.2.7.4}%
 \contentsline {subsection}{\numberline {2.7.5}PySAL}{10}{subsection.2.7.5}%
+\contentsline {section}{\numberline {2.8}Related work}{10}{section.2.8}%
 \contentsline {chapter}{\numberline {3}Methodology and development}{11}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Methodology}{11}{section.3.1}%
 \contentsline {section}{\numberline {3.2}Deployment}{11}{section.3.2}%
@@ -28,4 +29,5 @@
 \contentsline {chapter}{\numberline {5}Conclusions and recommendations}{15}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Conclusion}{15}{section.5.1}%
 \contentsline {section}{\numberline {5.2}Recommendations}{15}{section.5.2}%
-\contentsline {chapter}{Bibliography}{16}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Future work}{15}{section.5.3}%
+\contentsline {chapter}{Bibliography}{16}{section.5.3}%

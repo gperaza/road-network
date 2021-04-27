@@ -56,7 +56,7 @@
 }
 
 @misc{boeing_multi-scale_2018,
-	title = {A multi-scale analysis of 27,000 urban street networks: {Every} {US} city, town, urbanized area, and {Zillow} neighborhood - {Geoff} {Boeing}, 2020},
+	title = {A multi-scale analysis of 27,000 urban street networks: {Every} {US} city, town, urbanized area, and {Zillow} neighborhood},
 	author = {Boeing, Geoff},
 	month = aug,
 	year = {2018},
@@ -636,4 +636,64 @@ note = {Retrieved from \url{https://wiki.openstreetmap.org/wiki}}
 	number={1},
 	pages={5-27},
 	keywords={Open Source; Software; Spatial}
+}
+
+@article{boeing2020-planarity,
+	author = {Geoff Boeing},
+	title ={Planarity and street network representation in urban form analysis},
+	journal = {Environment and Planning B: Urban Analytics and City Science},
+	volume = {47},
+	number = {5},
+	pages = {855-869},
+	year = {2020},
+	doi = {10.1177/2399808318802941},
+	
+	URL = { 
+	https://doi.org/10.1177/2399808318802941
+	
+	},
+	eprint = { 
+	https://doi.org/10.1177/2399808318802941
+	
+	}
+	,
+	abstract = { Models of street networks underlie research in urban travel behavior, accessibility, design patterns, and morphology. These models are commonly defined as planar, meaning they can be represented in two dimensions without any underpasses or overpasses. However, real-world urban street networks exist in three-dimensional space and frequently feature grade separation such as bridges and tunnels: planar simplifications can be useful but they also impact the results of real-world street network analysis. This study measures the nonplanarity of drivable and walkable street networks in the centers of 50 cities worldwide and then examines the variation of nonplanarity across a single city. It develops two new indicators—the Spatial Planarity Ratio and the Edge Length Ratio—to measure planarity and describe infrastructure and urbanization. While some street networks are approximately planar, we empirically quantify how planar models can inconsistently but drastically misrepresent intersection density, street lengths, routing, and connectivity. }
+}
+
+@Inbook{Boeing2019-morphology,
+	author="Boeing, Geoff",
+	editor="D'Acci, Luca",
+	title="The Morphology and Circuity of Walkable and Drivable Street Networks",
+	bookTitle="The Mathematics of Urban Morphology",
+	year="2019",
+	publisher="Springer International Publishing",
+	address="Cham",
+	pages="271--287",
+	abstract="Circuity, the ratio of network distances to straight-line distances, is an important measure of urban street network structure and transportation efficiency. Circuity results from a circulation network's configuration, planning, and underlying terrain. In turn, it impacts how humans use urban space for settlement and travel. Although past research has examined overall street network circuity, researchers have not studied the relative circuity of walkable versus drivable circulation networks. This study uses OpenStreetMap data to explore relative network circuity. We download walkable and drivable networks for 40 US cities using the OSMnx software, which we then use to simulate four million routes and analyze circuity to characterize network structure. We find that walking networks tend to allow for more direct routes than driving networks do in most cities: average driving circuity exceeds average walking circuity in all but four of the cities that exhibit statistically significant differences between network types. We discuss various reasons for this phenomenon, illustrated with case studies. Network circuity also varies substantially between different types of places. These findings underscore the value of using network-based distances and times rather than straight-line when studying urban travel and access. They also suggest the importance of differentiating between walkable and drivable circulation networks when modeling and characterizing urban street networks: although different modes' networks overlap in any given city, their relative structure and performance vary in most cities.",
+	isbn="978-3-030-12381-9",
+	doi="10.1007/978-3-030-12381-9_12",
+	url="https://doi.org/10.1007/978-3-030-12381-9_12"
+}
+
+@Inbook{Boeing2020-urban-form-osm,
+	author="Boeing, Geoff",
+	editor={Hollander, J. and Sussman, A.},
+	title={{Exploring Urban Form through OpenStreetMap Data: A Visual Introduction}},
+	bookTitle={{Urban Experience and Design: Contemporary Perspectives on Improving the Public Realm}},
+	year="2020",
+	publisher="Routledge",
+	address="Abingdon, England",
+	pages="167--184",
+	isbn="978-0-367-43555-4",
+}
+
+@inbook{osullivan2014,
+	author = {O’Sullivan, David},
+	year = {2014},
+	month = {07},
+	pages = {1253-1273},
+	title = {{Spatial Network Analysis}},
+	isbn = {978-3-642-23429-3},
+	journal = {Handbook of Regional Science},
+	doi = {10.1007/978-3-642-23430-9_67}
 }

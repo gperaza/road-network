@@ -291,4 +291,32 @@ Sergio~J. Rey and Luc Anselin.
 \newblock {PySAL: A Python Library of Spatial Analytical Methods}.
 \newblock {\em The Review of Regional Studies}, 37(1):5--27, 2007.
 
+\bibitem{osullivan2014}
+David O’Sullivan.
+\newblock {\em {Spatial Network Analysis}}, pages 1253--1273.
+\newblock 07 2014.
+
+\bibitem{boeing_multi-scale_2018}
+Geoff Boeing.
+\newblock A multi-scale analysis of 27,000 urban street networks: {Every} {US}
+  city, town, urbanized area, and {Zillow} neighborhood, August 2018.
+
+\bibitem{boeing2020-planarity}
+Geoff Boeing.
+\newblock Planarity and street network representation in urban form analysis.
+\newblock {\em Environment and Planning B: Urban Analytics and City Science},
+  47(5):855--869, 2020.
+
+\bibitem{Boeing2019-morphology}
+Geoff Boeing.
+\newblock {\em The Morphology and Circuity of Walkable and Drivable Street
+  Networks}, pages 271--287.
+\newblock Springer International Publishing, Cham, 2019.
+
+\bibitem{Boeing2020-urban-form-osm}
+Geoff Boeing.
+\newblock {\em {Exploring Urban Form through OpenStreetMap Data: A Visual
+  Introduction}}, pages 167--184.
+\newblock Routledge, Abingdon, England, 2020.
+
 \end{thebibliography}

@@ -34,45 +34,45 @@ Warning--empty author in iso_simple_features
 Warning--empty publisher in osullivan2014
 Warning--can't use both author and editor fields in Boeing2019-morphology
 Warning--can't use both author and editor fields in Boeing2020-urban-form-osm
-You've used 60 entries,
+You've used 64 entries,
             1791 wiz_defined-function locations,
-            792 strings with 11921 characters,
-and the built_in function-call counts, 11882 in all, are:
-= -- 1051
-> -- 414
+            808 strings with 12477 characters,
+and the built_in function-call counts, 12452 in all, are:
+= -- 1104
+> -- 433
 < -- 8
-+ -- 167
-- -- 107
-* -- 706
-:= -- 1810
-add.period$ -- 169
-call.type$ -- 60
-change.case$ -- 50
++ -- 176
+- -- 112
+* -- 710
+:= -- 1907
+add.period$ -- 185
+call.type$ -- 64
+change.case$ -- 54
 chr.to.int$ -- 0
-cite$ -- 66
-duplicate$ -- 564
-empty$ -- 1290
-format.name$ -- 107
-if$ -- 2735
+cite$ -- 70
+duplicate$ -- 584
+empty$ -- 1362
+format.name$ -- 112
+if$ -- 2869
 int.to.chr$ -- 0
-int.to.str$ -- 60
+int.to.str$ -- 64
 missing$ -- 55
-newline$ -- 290
-num.names$ -- 60
-pop$ -- 212
+newline$ -- 314
+num.names$ -- 65
+pop$ -- 234
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 295
+skip$ -- 303
 stack$ -- 0
 substring$ -- 681
-swap$ -- 126
+swap$ -- 130
 text.length$ -- 8
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 6
-while$ -- 102
-width$ -- 62
-write$ -- 620
+while$ -- 107
+width$ -- 66
+write$ -- 668
 (There were 4 error messages)

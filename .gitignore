@@ -3,3 +3,8 @@ notebooks/cache/
 notebooks/networks/merida-kanasin-road.graphml
 notebooks/networks/merida-kanasin-road-gephi.graphml
 notebooks/osmnx-folium.html
+*.log
+report/Project Report/upyreportmain.pdf
+*.synctex.gz
+notebooks/Merida/.ipynb_checkpoints/
+report/Project Report/auto/

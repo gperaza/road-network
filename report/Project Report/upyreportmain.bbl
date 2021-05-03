@@ -12,6 +12,13 @@ Chrismurf.
 \newblock Retrieved from
   \url{https://commons.wikimedia.org/wiki/File:Utm-zones-USA.svg}.
 
+\bibitem{manualMGN}
+{Instituto Nacional de Estadística y Geografía}.
+\newblock {Manual of Geostatistical Cartography}.
+\newblock INEGI, 2010.
+\newblock Retrieved from:
+  \url{https://www.inegi.org.mx/contenidos/temas/mapas/mg/metadatos/manual_cartografia_censal.pdf}.
+
 \bibitem{barthelemy_spatial_2011}
 Marc Barthélemy.
 \newblock Spatial networks.
@@ -315,6 +322,26 @@ Geoff Boeing.
 \newblock Routledge, Abingdon, England, 2020.
 
 \bibitem{anaconda}
-{Anaconda Software Distribution}, 2021.
+Anaconda Inc.
+\newblock {Anaconda Software Distribution}.
+\newblock Anaconda Documentation, 2021.
+
+\bibitem{epsg3857}
+MapTiler Team.
+\newblock {WGS 84 / Pseudo-Mercator -- Spherical Mercator, Google Maps,
+  OpenStreetMap, Bing, ArcGIS, ESRI}.
+\newblock epsg.io, 2019.
+
+\bibitem{2020census}
+{Instituto Nacional de Estadística y Geografía}.
+\newblock {Censo de Población y Vivienda 2020}.
+\newblock INEGI, 2020.
+
+\bibitem{MG_data}
+{Instituto Nacional de Estadística y Geografía}.
+\newblock {Marco Geoestadístico. Censo de Población y Vivienda 2020}.
+\newblock INEGI, 2020.
+\newblock Retrieved from:
+  \url{https://www.inegi.org.mx/app/biblioteca/ficha.html?upc=889463807469}.
 
 \end{thebibliography}

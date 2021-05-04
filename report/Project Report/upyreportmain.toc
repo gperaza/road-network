@@ -26,10 +26,10 @@
 \contentsline {section}{\numberline {3.2}The Environment}{11}{section.3.2}%
 \contentsline {section}{\numberline {3.3}Data Collection}{11}{section.3.3}%
 \contentsline {section}{\numberline {3.4}Data Exploration and Preparation}{15}{section.3.4}%
-\contentsline {section}{\numberline {3.5}Data Modeling}{15}{section.3.5}%
-\contentsline {chapter}{\numberline {4}Results}{17}{chapter.4}%
-\contentsline {chapter}{\numberline {5}Conclusions and recommendations}{19}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Conclusion}{19}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Recommendations}{19}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Future work}{19}{section.5.3}%
-\contentsline {chapter}{Bibliography}{20}{section.5.3}%
+\contentsline {section}{\numberline {3.5}Data Modeling}{18}{section.3.5}%
+\contentsline {chapter}{\numberline {4}Results}{21}{chapter.4}%
+\contentsline {chapter}{\numberline {5}Conclusions and recommendations}{23}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Conclusion}{23}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Recommendations}{23}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Future work}{23}{section.5.3}%
+\contentsline {chapter}{Bibliography}{24}{section.5.3}%

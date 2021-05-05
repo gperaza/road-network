@@ -163,7 +163,25 @@ In this work, we are only using the MG Yucatán folder (31\_yucatan) and the fil
 
 \section{Data Exploration and Preparation}
 
-Mérida's street network has 93485 edges and 35105 nodes, and covers a convex hull area of 1,032.4 km$^2$ that comprises the 874.4 km$^2$ of the Mérida municipality's area \cite{2020census}. However, the network is disconnected due to unfinished roads or roads at the boundary. Thus, we retain only the largest connected component, which has 93371 edges and 35031 nodes, comprising the 99.9\% of edges and 99.8\% of nodes from the whole network. The covered area is the same. 
+Mérida's street network has 93485 edges and 35105 nodes, and covers a convex hull area of 1,032.4 km$^2$ that comprises the 874.4 km$^2$ of the Mérida municipality's area \cite{2020census}. However, the network is disconnected due to unfinished roads or roads at the boundary. Thus, we retain only the largest connected component (see Figure \ref{fig:merida-street-network}), which has 93371 edges and 35031 nodes, comprising the 99.9\% of edges and 99.8\% of nodes from the whole network. The covered area is the same. Figure \ref{fig:merida-street-network-boundary} shows the street network within the municipal boundary of Mérida. 
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.5\textwidth]{Figures/merida-road-network.png}
+	\caption{Mérida municipality street network.
+		\label{fig:merida-street-network}}
+\end{figure}
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.5\textwidth]{Figures/merida-road-network-boundary.png}
+	\caption{Mérida municipality street network with municipal boundary.
+		\label{fig:merida-street-network-boundary}}
+\end{figure}
+
+If we look at the node and edge attributes of the network, we see that nodes are indexed by an integer value (the ID from OSM). They have x and y coordinates, the number of streets intersecting the node (street count), the type of intersection, and the latitude and longitude as in OSM. We have 773 nodes that are labeled by their intersection type such as crossing, mini roundabout, motorway junction, traffic signals, turning circle, or turning loop. Remember that nodes are considered street intersections.
+
+Edges are considered street roads and are indexed by their starting and ending nodes, and a zero. They are tuple objects. The zero is the edge key, since in a multigraph, we can have potentially more than one edge between a pair of nodes; each edge is identified by a key. Other edge attributes include the ID from OSM, the type of road (e.g., primary, primary link, secondary, secondary link, tertiary, tertiary link, trunk, trunk link, residential, living street, and unclassified), maximum speed, length of the road, the name of the street, the width, and whether it is a lane, bridge, junction, tunnel, or access road. We have 19842 lane roads, 56 bridges, 1366 road junctions, 2 tunnel roads, and 5 access roads.
 
 In order to perform some analysis involving how street network metrics change with scale, we import AGEBs from the MG to create a subgraph for each different AGEB. Additionally, we want to include socio-demographic data to the analysis. However, the census dataset does not include the polygons of the AGEBs. For such reason, we must merge both MG and 2020 Census data.
 
@@ -229,7 +247,14 @@ OSMnx includes two modules (basic and extended stats) for calculating geometric 
 
 We calculate the listed metrics for the Mérida municipality street network, except for node and edge connectivity, eccentricity, diameter, radius, center, and periphery due to exhaustion of the computer memory. The calculations lasted around 6 hours and 7 minutes. We saved the calculations in a csv file to not recalculate them again.
 
-For the calculation of metric for AGEBs, we do not exclude any listed metric. Such calculations lasted around 47 minutes for all AGEBs. However, two AGEBs were excluded because they had only one node. Also, when we updated the local degree, betweenness and closeness centrality to global, other two AGEBs were excluded as Mérida's street network did not include any node of such AGEBs. For such reason, we ended up working with 513 AGEBs in this work. Finally, we merge the network calculation with the 2020 Census and MG data into a single geodataframe, and a column for population density was added. The data was saved in shapefiles named \textit{merida\_ageb\_stats\_census.shp}.
+For the calculation of metric for AGEBs, we do not exclude any listed metric. Such calculations lasted around 47 minutes for all AGEBs. However, two AGEBs were excluded because they had only one node. Also, when we updated the local degree, betweenness and closeness centrality to global, other two AGEBs were excluded as Mérida's street network did not include any node of such AGEBs. For such reason, we ended up working with 513 AGEBs in this work (see Figure \ref{fig:merida-ageb-street-network}). Finally, we merge the network calculations with the 2020 Census and MG data into a single geodataframe, and a column for population density was added. The data was saved in shapefiles named \textit{merida\_ageb\_stats\_census.shp}.
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.5\textwidth]{Figures/merida-ageb-road-network.png}
+	\caption{Mérida street network with urban AGEBs.
+		\label{fig:merida-ageb-street-network}}
+\end{figure}
 
 \section{Data Modeling}
 

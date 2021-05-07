@@ -1,6 +1,17 @@
 \documentclass{upy-report}
-\include{markup}
-%load any additional packages
+
+% Markup for tracking changes and revisions
+% \added[id=<id>, comment=<comment>]{<new text>}
+% \deleted[id=<id>, comment=<comment>]{<old text>}
+% \replaced[id=<id>, comment=<comment>]{<new text>}{<old text>}
+% \highlight[id=<id>, comment=<comment>]{<text>}
+% \comment[id=<id>]{<comment>}
+\usepackage[]{changes}
+\definechangesauthor[name={Gonzalo Peraza}, color=green]{GP}
+\setuptodonotes{inline}
+
+% load any additional packages
+\usepackage{listings}
 \usepackage{booktabs} % to enable the use of \toprule, \midrule, \bottomrule in tables
 \usepackage{siunitx} % to use the scientific notation
 \sisetup{output-exponent-marker=\ensuremath{\mathrm{e}}} % configuration of the siunitx package to use the "e" notation

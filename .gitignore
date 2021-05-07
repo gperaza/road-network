@@ -8,3 +8,12 @@ report/Project Report/upyreportmain.pdf
 *.synctex.gz
 notebooks/Merida/.ipynb_checkpoints/
 report/Project Report/auto/
+*.loc
+*.soc
+*.lof
+*.toc
+*.aux
+*.lot
+*.fdb_latexmk
+*.fls
+*.blg

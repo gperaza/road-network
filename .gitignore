@@ -17,3 +17,4 @@ report/Project Report/auto/
 *.fdb_latexmk
 *.fls
 *.blg
+*.el

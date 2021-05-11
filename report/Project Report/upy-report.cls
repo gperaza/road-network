@@ -14,6 +14,7 @@
 
 \RequirePackage[utf8]{inputenc}
 \RequirePackage{graphicx}
+% \RequirePackage[draft]{graphicx}
 \RequirePackage{subfigure}
 \graphicspath{{./Figures/}}
 \RequirePackage{mathtools}

@@ -1,9 +1,9 @@
 \chapter{Methodology and development}
 \label{cha:chapter3}
 
-\added[id=GP]{In this Chapter, I provide a description of the workflow followed during the analysis of the road network.}
+In this Chapter, I provide a description of the workflow followed during the analysis of the road network.
 
-\replaced{Most of the analysis}{This work} was done using Jupyter notebooks, \added{an open format which allows for documented and reproducible workflows.} \added{. All notebooks are stored in} a GitHub repository (\url{https://github.com/gperaza/road-network}\added{, private at the time of writing, since it still contains preliminary work.}). \replaced{The}{This} repository's root contains an environment definition file and a notebooks folder. Within that folder, the repository contains \added{nested subfolders, }one folder for the work done in Mérida, Yucatán, and other folder for the different cities in México, that are beyond the scope of this report. The following notebooks \added{(which included the analysis reported here)} are included in the Mérida folder:
+Most of the analysis was done using Jupyter notebooks, an open format which allows for documented and reproducible workflows. All notebooks are stored in a GitHub repository (\url{https://github.com/gperaza/road-network}, private at the time of writing, since it still contains preliminary work.). The repository's root contains an environment definition file and a notebooks folder. Within that folder, the repository contains nested subfolders, one folder for the work done in Mérida, Yucatán, and other folder for the different cities in México, that are beyond the scope of this report. The following notebooks (which include the analysis reported here) are located in the Mérida folder:
 
 \begin{enumerate}
 \item Data preparation: downloading/modeling and calculating network stats of Mérida's road network and its urban AGEBs.
@@ -11,11 +11,11 @@
 \item Cluster analysis of the urban AGEBs.
 \end{enumerate}
 
-To \replaced{reproduce the analysis}{run the code examples} in this resource repository, we simply \replaced{execute each notebook}{run everything} in a pre-built Anaconda environment. This process is detailed in the following section.
+To reproduce the analysis in this resource repository, we simply execute each notebook in a pre-built Anaconda environment. This process is detailed in the following section.
 
 \section{The Environment}
 
-\replaced{The}{This} project's repository contains an Anaconda environment file in \verb|yaml| format\deleted{(i.e., .yml)} for running the Jupyter notebooks on any computer. Anaconda \cite{anaconda} is a data science platform that facilitates package management and deployment. It is available for Windows, Linux and macOS. We use the Individual Edition, which is the open-source distribution of Anaconda.
+The project's repository contains an Anaconda environment file in \verb|yaml| format for running the Jupyter notebooks on any computer. Anaconda \cite{anaconda} is a data science platform that facilitates package management and deployment. It is available for Windows, Linux and macOS. We use the Individual Edition, which is the open-source distribution of Anaconda.
 
 First, download and install Anaconda Individual Edition. Once it is installed and running on your computer, run the following code in the terminal window:
 
@@ -32,7 +32,7 @@ With the environment active, it is possible to access and edit the notebook file
 
 \section{Data Collection}
 
-This work uses OSMnx to download the street network of Mérida and its AGEBs \added{from Open Street Map}. The road network is loaded into a graph model (using NetworkX), corrected, and analyzed. OSMnx also allows for visualization at municipal and neighborhood (AGEB) scales.
+This work uses OSMnx to download the street network of Mérida and its AGEBs from Open Street Map. The road network is loaded into a graph model (using NetworkX), corrected, and analyzed. OSMnx also allows for visualization at municipal and neighborhood (AGEB) scales.
 
 To obtain the street network, we define a function to download and save the graph of the municipality, or, if already present, load it from a previously stored NetworkX graph object:
 
@@ -68,9 +68,7 @@ G_proj, nodes_proj, edges_proj = get_roads_osmnx(places, update=False,
 
 OSMnx geocodes the query "Merida, Yucatan, Mexico" to retrieve the place boundaries of that city from the Nominatim API. It then retrieves the drivable street network data within those boundaries from the Overpass API and constructs a graph model (via NetworkX). OSMnx simplifies/corrects the network topology in such way that nodes represent intersections and dead-ends, and edges represent the street segments linking them. Finally, the functions saves the constructed graph as a GraphML file as to not download the same data again.
 
-Note that the graph is projected to the WGS84 Pseudo-Mercator CRS ("EPSG:3857"). We do not use the commonly used CRS WGS84 latitude-longitude projection ("EPSG:4326"), since in such CRS the coordinates are given in degree units, and we required meters for distance calculations. For that reason, we use the "EPSG:3857" projection, where coordinates are given in meters. This last projection is the one that Google, OpenStreetMap, Bing, ArcGIS, ESRI, etc. use for rendering their maps~\cite{epsg3857}.
-
-\comment[id=GP]{I thought we were using an UTM projection? What happened?}
+Note that the graph is projected to the WGS84 Pseudo-Mercator CRS ("EPSG:3857"). We do not use the commonly used CRS WGS84 latitude-longitude projection ("EPSG:4326"), since in such CRS the coordinates are given in degree units, and we required meters for distance calculations. For that reason, we use the "EPSG:3857" (WGS84 Pseudo-UTM) projection, where coordinates are given in meters. This last projection is the one that Google, OpenStreetMap, Bing, ArcGIS, ESRI, etc. use for rendering their maps~\cite{epsg3857}.
 
 Besides the graph object, the function, also returns node and edge GeoDataFrames, used for tabular storage and analysis of such entities. This is possible since OSMnx models all networks as NetworkX MultiDiGraph objects and allows conversion among different network models and data structures, i.e., from and to:
 
@@ -80,7 +78,7 @@ Besides the graph object, the function, also returns node and edge GeoDataFrames
  \item GeoPandas node/edge GeoDataFrames.
 \end{itemize}
 
-\comment[id=GP]{If AGEBS are note previously defined we need to define them before the following paragrah. I see you defined them in a couple paragraphs below, you need to move that definition here with a short discussion of why we are using agebs.}
+Urban AGEBs are the geographic area, subdivision of municipal areas, occupied by a set of blocks, generally ranging from 1 to 50, perfectly delimited by streets, avenues, walkways or any other easily identifiable feature on the ground and whose land use is mainly residential, industrial, services, commercial, etc., only assigned within urban localities (see Figure \ref{fig:ageb_division}). We use AGEBs to find similarities -- spatial correlation -- within the municipality. They also serve to understand individual urban development in different eras, designs, and paradigms.
 
 We collected information for Mérida's urban AGEBs from the Institute of Statistics and Geography's (INEGI) National Geoestatistical Framework (MG, by the acronym in spanish) and from socio-demographic data from INEGI's 2020 Population and Housing Census (2020 Census) conducted from March 2 to March 27, 2020~\cite{2020census}.
 
@@ -102,8 +100,6 @@ The MG is a mexican unique national system designed by INEGI to correctly refere
   \caption{MG dissaggregation areas. Retrieved from: \cite{manualMGN}.
     \label{fig:MGN_divisions}}
 \end{figure}
-
-Urban AGEBs are the geographic area, subdivision of municipal areas, occupied by a set of blocks, generally ranging from 1 to 50, perfectly delimited by streets, avenues, walkways or any other easily identifiable feature on the ground and whose land use is mainly residential, industrial, services, commercial, etc., only assigned within urban localities (see Figure \ref{fig:ageb_division}).
 
 \begin{figure}[htpb]
   \centering
@@ -182,19 +178,17 @@ Mérida's street network has 93485 edges and 35105 nodes, and covers a convex hu
     \label{fig:merida-street-network-boundary}}
 \end{figure}
 
-\replaced{As encoded by OSMnx,}{If we look at the node and edge attributes of the network, we see that} nodes are indexed by an integer value (the ID from OSM) and posses several features: $x$ and $y$ coordinates, number of streets intersecting the node (street count), type of intersection, latitude and longitude. \replaced{There are a total of}{We have} 773 nodes that are labeled by their intersection type, such as crossing, mini roundabout, motorway junction, traffic signals, turning circle, or turning loop. \deleted{Remember that nodes are considered street intersections.}
+As encoded by OSMnx, nodes are indexed by an integer value (the ID from OSM) and posses several features: $x$ and $y$ coordinates, number of streets intersecting the node (street count), type of intersection, latitude and longitude. There are a total of 773 nodes that are labeled by their intersection type, such as crossing, mini roundabout, motorway junction, traffic signals, turning circle, or turning loop.
 
-Edges (roads) and are indexed by \added(a tuple with three values): their starting and ending nodes, \replaced{and an edge key}{and a zero}. \deleted{They are tuple objects.} As mentioned, the third integer is the edge key, since in a multigraph we can have potentially more than one edge between the same pair of nodes. Each edge is identified by an integer key, and is often zero in Merida's road network, since multi edges are rare. Other edge attributes include: the ID from OSM, type of road (e.g., primary, primary link, secondary, secondary link, tertiary, tertiary link, trunk, trunk link, residential, living street, and unclassified), maximum speed, length of the road, name of the street, width, and whether it is a lane, bridge, junction, tunnel, or access road. We have 19842 lane roads, 56 bridges, 1366 road junctions, 2 tunnel roads, and 5 access roads.
+Edges (roads) and are indexed by (a tuple with three values): their starting and ending nodes, and an edge key. As mentioned, the third integer is the edge key, since in a multigraph we can have potentially more than one edge between the same pair of nodes. Each edge is identified by an integer key, and is often zero in Merida's road network, since multi edges are rare. Other edge attributes include: the ID from OSM, type of road (e.g., primary, primary link, secondary, secondary link, tertiary, tertiary link, trunk, trunk link, residential, living street, and unclassified), maximum speed, length of the road, name of the street, width, and whether it is a lane, bridge, junction, tunnel, or access road. We have 19842 lane roads, 56 bridges, 1366 road junctions, 2 tunnel roads, and 5 access roads.
 
 One of the main objectives of the project is to analyze how street network metrics change with scale. As a first step, we imported AGEBs from the MG to create a subgraph for each different AGEB. Additionally, to include socio-demographic data in the analysis, we merged both MG and 2020 Census data, since the census dataset does not include the polygons of the AGEBs. The merging process is described in the following.
 
 The 2020 Census data contains missing information recorded as * (asterisk) or N/D (Not Available). We replaced such values with zero (0). After,  we manually set the data types of each feature from string to the true type (float), according to~\cite{census_data}. We also dropped totals by municipality and locality as only totals by AGEB are processed in the analysis.
 
-We create a new column in the 2020 Census dataframe to store the (full) geostatistical key, built by combining values from the geostatistical keys of state, municipality, locality, and AGEB, while omitting block information.
-\comment[id=GP]{What are blocks? I think the rest of the paragraph is unecesarly descriptive. This are mostly standard preprocessing steps that, if needed, can be look up in the notebooks. Just mention you drop redundat columns and perform an inner merge.}
- We add missing zeros to the values of the municipality and locality geostatistical key to fulfill the appropiate length. Also, we change the data types of the state, municipality, and locality geostatistical keys from integer to string to concatenate them. Next, we drop columns from the 2020 Census dataframe that will be duplicated after the merging. Finally, we perform the merge with the MG dataframe on the concatenated geostatistical key column present in both dataframes using the inner merge type that uses the intersection of columns from both dataframes, similar to a SQL inner join~\cite{pandas_merge}.
+We create a new column in the 2020 Census dataframe to store the (full) geostatistical key, built by combining values from the geostatistical keys of state, municipality, locality, and AGEB; also, we drop redundant columns and perform an inner merge \cite{pandas_merge} on both data frames.
 
-The MG has geometric data from 1532 AGEBs, while the 2020 Census has data from 1432 AGEBs for Yucatán. After the merge, we ended up with the subset of 1432 AGEBs in both data sets. We further narrow the selection to include only the 523 urban AGEBs belonging to the city of Mérida. The merged geodataframe was saved as shapefiles under the name \verb|merida\_ageb\_census\_data.shp| projected in the Pseudo-Mercator CRS.
+The MG has geometric data from 1532 AGEBs, while the 2020 Census has data from 1432 AGEBs for Yucatán. After the merge, we ended up with the subset of 1432 AGEBs in both data sets. We further narrow the selection to include only the 523 urban AGEBs belonging to the city of Mérida. The merged geodataframe was saved as shapefiles under the name \verb|merida_ageb_census_data.shp| projected in the Pseudo-Mercator CRS.
 
 Next, we created a subgraph for each AGEB, containing only the portion of the network within each AGEB. To do this, we first created a new column with each AGEB cover area, in meters, calculated from each AGEB's polygon. The dataframe is re-project into the Mercator projection, which is the projection expected by OSMnx. Then, we create queries from the AGEBs geodataframe to automate the downloading and saving of each AGEB's road network. The queries contain the path where graphs will be saved, the polygon of the AGEB to be downloaded, and the area in meters of the AGEB. Every graph is saved in both shapefile and GraphML format. We ended up with 517 AGEBs specific graphs, because some AGEBs did not contain any node or edge within the requested polygon. The generation of the subgraphs takes around 32 minutes.
 
@@ -252,7 +246,7 @@ OSMnx includes two modules (basic and extended stats) for calculating geometric 
 
 We calculate the listed metrics for the Mérida municipality street network, except for node and edge connectivity, eccentricity, diameter, radius, center, and periphery due to exhaustion of the computer memory. The calculations lasted around 6 hours and 7 minutes. We saved the calculations in a csv file to avoid recalculation.
 
-For each individual subgraphs AGEBs, we do not exclude any listed metric. Such calculations lasted around 47 minutes for all AGEBs. However, two AGEBs were excluded because they had only one node. Also, when we updated the local degree, betweenness and closeness centrality to global, other two AGEBs were excluded as Mérida's street network did not include any node of such AGEBs. For such reason, we ended up working with 513 AGEBs in this work (see Figure \ref{fig:merida-ageb-street-network}). Finally, we merge the network calculations with the 2020 Census and MG data into a single geodataframe, and a column for population density was added. The data was saved in shapefiles named \textit{merida\_ageb\_stats\_census.shp}.
+For each individual subgraphs AGEBs, we do not exclude any listed metric. Such calculations lasted around 47 minutes for all AGEBs. However, two AGEBs were excluded because they had only one node. Also, when we updated the local degree, betweenness and closeness centrality to global, other two AGEBs were excluded as Mérida's street network did not include any node of such AGEBs. For such reason, we ended up working with 513 AGEBs in this work (see Figure \ref{fig:merida-ageb-street-network}). Finally, we merge the network calculations with the 2020 Census and MG data into a single geodataframe, and a column for population density was added. The data was saved in shapefiles named \verb|merida_ageb_stats_census.shp|.
 
 \begin{figure}[htpb]
   \centering
@@ -265,7 +259,7 @@ For each individual subgraphs AGEBs, we do not exclude any listed metric. Such c
 
 As one of our objectives is to perform a clustering algorithm on the AGEBs to find similar AGEBs based on socio-demographic data and their network measures, we must choose how our AGEBs are going to be interconnected.
 
-Spatial weights are used to represent geographical relationships between two spatial observations. We consider two different approaches to construct spatial weights based on contiguity/adjacency relations. Such approaches arises from the legal moves that different chess pieces can make. Rook contiguity considers two polygons as connected if they share an edge on their border (see Figure \ref{fig:rook-contiguity}). But Queen contiguity connects two polygons if they share a one or more points on their border (see Figure \ref{fig:queen-contiguity}). As result, queen representation has more neighbors than rook has. We chose a rook representation as it exploits the sparse nature of contiguity weights matrices \cite{rey_geo_ds_2020}.
+Spatial weights are used to represent geographical relationships between two spatial observations. We consider two different approaches to construct spatial weights based on contiguity/adjacency relations. Such approaches arises from the legal moves that different chess pieces can make. Rook contiguity considers two polygons as connected if they share an edge on their border (see Figure \ref{fig:rook-contiguity}). But Queen contiguity connects two polygons if they share one or more points on their border (see Figure \ref{fig:queen-contiguity}). As result, queen representation has more neighbors than rook has. We chose a rook representation as it exploits the sparse nature of contiguity weights matrices \cite{rey_geo_ds_2020}.
 
 \begin{figure}[htpb]
   \centering

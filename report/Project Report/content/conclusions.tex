@@ -4,11 +4,13 @@
 
 In this work, we analyze and characterize the municipality of Mérida, Yucatán, México at a municipal and AGEB scale to have a general and detailed view of the street network design. We believe it is the first local work of its kind which allow us acquire better understanding of the topological structure of street networks. We find that planning eras and design paradigms of urban street roads on Mérida influence street network density, resilience, and total street length. Overall, Mérida is characterized by the importance of 3-way intersections. 
 
-We find a significant linear relationship between total street length and the number of nodes in a network. Also, most AGEB networks typically follow right-skewed distributions of street segment length.
+We find a significant linear relationship between total street length and the number of nodes in a network. Also, most AGEB networks typically follow right-skewed distributions of street segment length. We recommend performing a principal component analysis on the socio-demographic data in order to keep only relevant features and analyze their relationship.
 
-Through centrality measures we identify important nodes in different use cases, and how they can be seen as means to analyze resilience and robustness of the network. 
+Through centrality measures we identify important nodes in different use cases, and how they can be seen as means to analyze resilience and robustness of the network.
 
 Clustering findings reveal the spatial correlation of AGEBs within the city and how not only topological attributes but also socio-demographic data influences the clear subdivision of the city in different parts (14 clusters). The subdivisions created by the agglomerative clustering algorithm seems to have a natural definition of the parts from the city. However, we recommend finding the ideal number of clusters based on efficient and official techniques to observe the difference.
+
+As some calculations at municipal scale were not done due to memory overflow, we highly recommend a system with 128 GB of memory and 24 CPU cores, as well as parallelizing the code in order to reduce execution time.
 
 
 \section{Future work}

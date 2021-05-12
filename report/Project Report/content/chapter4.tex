@@ -56,7 +56,7 @@ Mérida has 3.1 streets per intersection on average; 31\% of nodes are 4-way int
 \begin{figure}[htpb]
   \centering
   \includegraphics[width=0.5\textwidth]{Figures/merida-street-per-node-proportion-distribution.png}
-  \caption{Distribution of node types in Mérida.
+  \caption{Distribution of node types in Mérida. It has 3.1 streets per intersection on average; 31\% of nodes are 4-way intersections, 59\% are 3-way intersections, and 9\% are dead-ends.
     \label{fig:merida-node-types-distribution}}
 \end{figure}
 
@@ -81,7 +81,7 @@ We can observe that intersections in principal streets, avenues, and in the hist
 \begin{figure}[htpb]
   \centering
   \includegraphics[width=0.8\textwidth]{Figures/merida-degree-centrality.png}
-  \caption{Degree centrality of all nodes in Mérida. Nodes are visualized from low (dark violet) to high (light yellow). The colors in colorspace are linearly mapped to the attribute values.
+  \caption{Degree centrality of all nodes in Mérida. Nodes are visualized from low (dark violet) to high (light yellow). The colors in colorspace are linearly mapped to the attribute values. observe that intersections in principal streets, avenues, and in the historical center of Mérida have low degree centrality compared to intersections in residential areas.
     \label{fig:merida-degree-centrality}}
 \end{figure}
 
@@ -97,18 +97,18 @@ Closeness centrality makes the assumption that important nodes are close to othe
 \begin{figure}[htpb]
   \centering
   \includegraphics[width=0.8\textwidth]{Figures/merida-closeness-centrality.png}
-  \caption{Closeness centrality of all nodes in Mérida. Nodes are visualized from low (dark violet) to high (light yellow).
+  \caption{Closeness centrality of all nodes in Mérida. Nodes are visualized from low (dark violet) to high (light yellow). Observe how nodes in the south and outside Mérida city are less important according to closeness centrality, while nodes at the historical center, north, and even north-west are more important.
     \label{fig:merida-closeness-centrality}}
 \end{figure}
 
 \begin{figure}[htpb]
   \centering
   \includegraphics[width=0.8\textwidth]{Figures/merida-edge-closeness-centrality.png}
-  \caption{Closeness centrality of all edges in Mérida. Edges are visualized from low (dark) to high (light yellow).
+  \caption{Closeness centrality of all edges in Mérida. Edges are visualized from low (dark) to high (light yellow). Observe that the peripheral ring road from west to north is the most important road as well as those roads closer to it. Additionally, we can observe the great difference of importance from the south peripheral ring road to all the other segments of the peripheral ring road of Mérida city.
     \label{fig:merida-edge-closeness-centrality}}
 \end{figure}
 
-Betweenness centrality declares that important nodes are those who connect other nodes; it is also a measure to examine resilience in the network. In Mérida, the node highlighted in red has approximately 7\% of all shortest paths running through it (see Figure \ref{fig:merida-max-node-betweenness-centrality}). If we observe Figure \ref{fig:merida-betweenness-centrality}, see that intersection in principal avenues and streets are the most important, which makes sense because they connect the city in a more efficient way.
+Betweenness centrality declares that important nodes are those who connect other nodes; it is also a measure to examine resilience in the network. In Mérida, the node highlighted in red has approximately 7\% of all shortest paths running through it (see Figure \ref{fig:merida-max-node-betweenness-centrality}). If we observe Figure \ref{fig:merida-betweenness-centrality}, see that intersections in principal avenues and streets are the most important, which makes sense because they connect the city in a more efficient way.
 
 \begin{figure}[htpb]
   \centering
@@ -120,7 +120,7 @@ Betweenness centrality declares that important nodes are those who connect other
 \begin{figure}[htpb]
   \centering
   \includegraphics[width=0.8\textwidth]{Figures/merida-betweenness-centrality.png}
-  \caption{Betweenness centrality of all nodes in Mérida. Nodes are visualized from low (dark violet) to high (light yellow).
+  \caption{Betweenness centrality of all nodes in Mérida. Nodes are visualized from low (dark violet) to high (light yellow). See that intersections in principal avenues and streets are the most important because they connect the city in a more efficient way.
     \label{fig:merida-betweenness-centrality}}
 \end{figure}
 
@@ -129,7 +129,7 @@ Finally, PageRank makes the assumption that important nodes are those that have 
 \begin{figure}[htpb]
   \centering
   \includegraphics[width=1.0\textwidth]{Figures/merida-node-pagerank.png}
-  \caption{Node with highest PageRank score. This node is located at Rotary Internacional Av. and 21A street, colonia Itzimna.
+  \caption{Node with highest PageRank score. This node is located at Rotary Internacional Av. and 21A street, colonia Itzimna. This node is important because it is connected to other important nodes, which makes sense because it is located at one of the most important avenues in Mérida city.
     \label{fig:merida-max-node-pagerank}}
 \end{figure}
 
@@ -143,7 +143,7 @@ Table \ref{tab:measures_urban_agebs} presents summary statistics for the 513 AGE
 \begin{figure}[htpb]
   \centering
   \includegraphics[width=\textwidth]{Figures/merida-ageb-histograms.png}
-  \caption{Histograms of average streets per node (left), average street length (middle), and intersection density per km$^2$ (right).
+  \caption{Histograms of average streets per node (left) shows that the typical AGEB has 3.2 streets per intersection; the typical AGEB averages 92-meter street segment lengths (middle), and has 112.8 intersections per km$^2$ (right).
     \label{fig:merida-ageb-histograms}}
 \end{figure}
 
@@ -152,7 +152,7 @@ In Figure \ref{fig:merida-ageb-street-length-vs-nodes} , we examine the relation
 \begin{figure}[htpb]
   \centering
   \includegraphics[width=0.5\textwidth]{Figures/merida-ageb-street-length-vs-nodes.png}
-  \caption{Linear relationship between total street length and number of nodes in the street network of every Mérida urban AGEB.
+  \caption{Linear relationship between total street length and number of nodes in the street network of every Mérida urban AGEB. We find a meaningful linear relationship ($r^2 = 0.81$). The not-so-strong linear relationship is due to the fact that we are handling invariant street networks designed and shaped in different historical eras.
     \label{fig:merida-ageb-street-length-vs-nodes}}
 \end{figure}
 
@@ -198,12 +198,12 @@ In Figure \ref{fig:merida-ageb-street-length-vs-nodes} , we examine the relation
 \end{table*}
 \end{landscape}
 
-Figure \ref{fig:merida-ageb-avg-street-length} depicts the mean street length by AGEB. We can observe that the greatest average street lengths tend to be in older AGEBs such as those in the historical center of Mérida, also outside the boundary of the city, and, more specifically, in towns such as Caucel Pueblo, Komchen, Chablekal, Cholul, and San José Tzal. On the other hand, he lowest average street lengths are present in new residential lands. This attribute is a useful factor for studying the dynamics of the municipality during its different development eras.
+Figure \ref{fig:merida-ageb-avg-street-length} depicts the mean street length by AGEB. We can observe that the greatest average street lengths tend to be in older AGEBs such as those in the historical center of Mérida, also outside the boundary of the city, and, more specifically, in towns such as Caucel Pueblo, Komchen, Chablekal, Cholul, and San José Tzal. On the other hand, the lowest average street lengths are present in new residential lands. This attribute is a useful factor for studying the dynamics of the municipality during its different development eras.
 
 \begin{figure}[htpb]
   \centering
   \includegraphics[width=0.8\textwidth]{Figures/merida-ageb-avg-street-length.png}
-  \caption{Map AGEB by average street length. AGEBs are visualized from low (dark) to high (light yellow). The colors in colorspace are linearly mapped to the attribute values.
+  \caption{Map AGEB by average street length. AGEBs are visualized from low (dark) to high (light yellow). Observe that the greatest average street lengths tend to be in older AGEBs such as those in the historical center of Mérida, also outside the boundary of the city, and, more specifically, in towns such as Caucel Pueblo, Komchen, Chablekal, Cholul, and San José Tzal. On the other hand, the lowest average street lengths are present in new residential lands.
     \label{fig:merida-ageb-avg-street-length}}
 \end{figure}
 
@@ -212,7 +212,7 @@ Looking at Figure \ref{fig:merida-ageb-betweenness}, we can observe that the mos
 \begin{figure}[htpb]
   \centering
   \includegraphics[width=0.8\textwidth]{Figures/merida-ageb-betweenness.png}
-  \caption{Map AGEB by mean betweenness centrality. AGEBs are visualized from low (dark) to high (light yellow).
+  \caption{Map AGEB by mean betweenness centrality. Observe that the most important (light-yellow colored) AGEBs are in non-concurrent locations (one or two in every town of the municipality).
     \label{fig:merida-ageb-betweenness}}
 \end{figure}
 

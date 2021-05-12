@@ -62,17 +62,15 @@ There may be many paths of varying lengths $l$ between two nodes $i$ and $j$. Th
 	l_s(i,j) = \min_\text{paths}({i \to j})
 \end{equation}
 
-The \textbf{average shortest path length} $<l>$ is defined as the average shortest path length between all possible pairs of nodes in the network. The \textbf{diameter} $d_G$ of a graph $G$ is defined as the maximum shortest path length $l_s$ found in the graph.
+The \textbf{average shortest path length} $<l>$ is defined as the average shortest path length between all possible pairs of nodes in the network. {\textbf{Eccentricity} of a node is the largest distance (the maximum of the shortest-path weighted distances) between a node and other nodes i.e., how far the node is from the node that is furthest from it \cite{urban-keitt_2001}. The \textbf{diameter} of a network is the maximum eccentricity of any node in the network and the \textbf{radius} is the minimum eccentricity \cite{hage-harary_1995}. The \textbf{center} if a network is the node or set of nodes with an eccentricity equals the radius, and the \textbf{periphery} of a network is the node or set of nodes with eccentricity equals the diameter. These distances serve as indicators for network size and shape if we use length as weight.
 
 \textbf{Average street length} is the mean edge length measured in meters, an example of spatial units, and indicates how fine-grained (small block size) or coarse-grained (large block size) the networks is.
 
 Density measures provided how fine-grained the network is. \textbf{Node density} is the number of nodes divided by the area covered by the network. \textbf{Intersection density} is the node density of the set of nodes with more than one street emanating from them, excluding dead-ends. The \textbf{edge density} is the sum of all edge lengths divided by the area. The physical \textbf{street density} is the sum of all edges (in the undirected graph) divided by the area.
 
-The \highlight[id=GP, comment={Define circuity first, then average circuity. Maybe define in terms of euclidean distance, since the projection we are using does not employ great circle distance.}]{\textbf{average circuity}} is the circle distances between the nodes of each edge, and it is defined by the sum of all edge lengths divided by the sum of the great-circle distances between the nodes incident to each edge \cite{giacomin-levinson_2015}.
+The {\textbf{average circuity} is the sum of edge lengths divided by the sum of straight-line distances between edge endpoints \cite{giacomin-levinson_2015}.
 
-\highlight[id=GP, comment={Maybe move whole paragraph just after the definition of shortest path, where diameter is also defined.}]{\textbf{Eccentricity}} \added{of a node} is the largest distance (the maximum of the shortest-path weighted distances) between a node and other nodes i.e., how far the node is from the node that is furthest from it \cite{urban-keitt_2001}. The \textbf{diameter} of a network is the maximum eccentricity of any node in the network and the \textbf{radius} is the minimum eccentricity \cite{hage-harary_1995}. The \textbf{center} if a network is the node or set of nodes with an eccentricity equals the radius, and the \textbf{periphery} of a network is the node or set of nodes with eccentricity equals the diameter. These distances serve as indicators for network size and shape if we use length as weight.
-
-\textbf{Connectivity} measures the minimum number of nodes or edges that must be removed from a connected graph to disconnect the network \cite{urban-keitt_2001}. In the case of street networks, we use \textbf{average node connectivity} as a resilience indicator, which is the mean number of internally \highlight[id=GP, comment={Not clear, may be define as the average local connectivity, and define local connectivity. It is the same, is it not?}]{node-disjoint} paths between each pair of nodes. This measure is more useful to represent the expected number of nodes that must removed to disconnect a randomly selected pair of non-adjacent nodes \cite{beineke-oellermann-pippert_2002, dankelmann-oellermann_2003} Networks with low connectivity may have multiple points of failure, this yield to a vulnerable system. 
+\textbf{Connectivity} measures the minimum number of nodes or edges that must be removed from a connected graph to disconnect the network \cite{urban-keitt_2001}. In the case of street networks, we use \textbf{average node connectivity} as a resilience indicator, which is the mean of local node connectivity between each pair of nodes. This measure is more useful to represent the expected number of nodes that must removed to disconnect a randomly selected pair of non-adjacent nodes \cite{beineke-oellermann-pippert_2002, dankelmann-oellermann_2003} Networks with low connectivity may have multiple points of failure, this yield to a vulnerable system. 
 
 Centrality measures indicate the most important nodes in a network \cite{huang_2016, zhong_2017}. \textbf{Betweenness centrality} $g_i$ measures the total number of shortest paths between any two nodes in the graph that pass through node $i$ \cite{freeman_1997, ermagun-levinson_2017} and is defined as:
 
@@ -104,25 +102,15 @@ Finally, \textbf{PageRank} is an algorithm to compute a centrality measure that 
 
 A graph community is defined as a set of nodes that have more connections among themselves than other nodes in the graph \cite{fortunato_2010}. This feature is important in spatial networks since dense connections tend to take place between nodes that are closer in proximity. Moreover, this implies that the majority of flows between nodes occur as a function of nodes belonging to the same geographical region \cite{barthelemy_2018}.
 
-A community is typically identified by calculating \textbf{modularity} $Q$ \cite{newman-girvan_2004} and is defined as:
-
-\begin{equation}
-Q = \sum_{s = 1}^{n_M}\left( \frac{l_s}{E} - (\frac{d_s}{2E})^2\right)
-\end{equation}
-
-where $n_M$ is the number of \highlight[id=GP, comment={What is a module? What is a partition? What does the equation mean?}]{modules of the partition}, $l_s$ is the number of edges inside module $s$, $E$ is the total number of edges in the network, and $d_s$ is the total degree of the nodes in the module $s$.
-
 The above measures do not account for the distance between linked node pairs, an important measure that can be used to quantify real spatial networks embedded in geographic space. Distance can be measured in a variety of ways, the most common being Euclidean distance $d_E(i, j)$ or as the direct distance between two points. In contrast, the route distance $d_R(i, j)$ is computed by summing the geographical length of edges, which make up the shortest path between node $v_i$ and $v_j$ \cite{anderson_2020}.
 
 \section{Spatial Data}
 
-\comment[id=GP]{Start the section with some discussion about the nature and origin of data. Downloaded from... Encoded as a spatial graph..., etc.}
-
-As our data is embedded in space, we need to understand its properties:
+Spatial data is embedded in space, whether in a 3D or 2D representation. Data used in this work is encoded as a spatial graph with points, lines, and polygons embedded in space to represent them in the geographical space such as in a map. For such reason, we first need to understand the properties of the space and its representations.
 
 \subsection{Coordinate Reference Systems}
 
-\highlight[id=GP, comment={Not sure what you are trying to say here. What datum? A node? How is it a model of the earth?}]{A datum is a model of the Earth's shape.} Sometimes the Earth is assumed to have an spherical shape who is described by two coordinates, latitude (north) and longitude (east). However the Earth is not a sphere; its shape is more like an ellipsoid. There are many possible approximations to this shape, which define their own latitude-longitude coordinate system. A coordinate system (CS) is a sequence of coordinate axes with specified units of measure, and its types are: ellipsoidal, Cartesian, affine, gravity-related, linear, spherical, polar, and cylindrical. A coordinate reference system (CRS) associates a CS with an object by mean of a datum (see Figure \ref{fig:crs-datum}) \cite{nikolli_CRS_2011}. Some are more accurate than others for particular regions of the Earth's surface.  If our data is notated in different datums then we will need to convert them into one standard format. The most common global datum is called WGS84 (World Geodetic System, 1984) \cite{fox_spatial_2018}.
+Sometimes the Earth is assumed to have an spherical shape who is described by two coordinates, latitude (north) and longitude (east). However the Earth is not a sphere; its shape is more like an ellipsoid. There are many possible approximations to this shape (called datums), which define their own latitude-longitude coordinate system. A coordinate system (CS) is a sequence of coordinate axes with specified units of measure, and its types are: ellipsoidal, Cartesian, affine, gravity-related, linear, spherical, polar, and cylindrical. A coordinate reference system (CRS) associates a CS with an object by mean of a datum (see Figure \ref{fig:crs-datum}) \cite{nikolli_CRS_2011}. Some are more accurate than others for particular regions of the Earth's surface.  If our data is notated in different datums then we will need to convert them into one standard format. The most common global datum is called WGS84 (World Geodetic System, 1984) \cite{fox_spatial_2018}.
 
 \begin{figure}[h!]
 	\centering
@@ -131,7 +119,7 @@ As our data is embedded in space, we need to understand its properties:
 		\label{fig:crs-datum}}
 \end{figure}
 
-A projection is the change of the representation of locations from one coordinate system to another. Sometimes it is more convenient to work with a flattened 2D projection of a datum rather than its spherical coordinates. With this, we project the coordinates into Cartesian $x$ and $y$ meters. We take $x=$ Easting and $y=$ Northing, in the order $(x, y)$, in meters from some origin. When we do a projection, we must make some compromise because it is not possible to make a perfect flat version of an ellipsoid surface. All projections of locations on the Earth into a two-dimensional plane are distortions as something always will be distorted \cite{lapaine_choosing_2017}. A good projection to use \added{for moderate region sizes of up to ...} is \deleted{one of} the Universal Transverse Mercator (UTM) family. UTM splits the Earth's surface into state-sized regions, and defines separate projection for each one, \replaced{minimizing local distortions}{to minimize the distortion there} (see Figure \ref{fig:utm-zones}).
+A projection is the change of the representation of locations from one coordinate system to another. Sometimes it is more convenient to work with a flattened 2D projection of a datum rather than its spherical coordinates. With this, we project the coordinates into Cartesian $x$ and $y$ meters. We take $x=$ Easting and $y=$ Northing, in the order $(x, y)$, in meters from some origin. When we do a projection, we must make some compromise because it is not possible to make a perfect flat version of an ellipsoid surface. All projections of locations on the Earth into a two-dimensional plane are distortions as something always will be distorted \cite{lapaine_choosing_2017}. A good projection to use for the whole Earth surface is the Universal Transverse Mercator (UTM) family. UTM splits the Earth's surface into state-sized regions, and defines separate projection for each one, minimizing local distortions (see Figure \ref{fig:utm-zones}).
 
 \begin{figure}[h!]
 	\centering
@@ -140,12 +128,12 @@ A projection is the change of the representation of locations from one coordinat
 		\label{fig:utm-zones}}
 \end{figure}
 
-\replaced{When working with 2D projected geographic data, we employ three basic spatial entities or primitives that can be embedded on the plane}{With geographic data it is common to work in only two of the three dimensions. Two dimensional space support three basic types of spatial entity} \cite{iso_simple_features}:
+When working with 2D projected geographic data, we employ three basic spatial entities or primitives that can be embedded on the plane \cite{iso_simple_features}:
 
 \begin{itemize}
-	\item points - having a location
-	\item lines - comprising two or more locations in an ordered sequence
-	\item polygons - areas defined by three or more vertex locations in an ordered sequence
+	\item Points -- having a location.
+	\item Lines -- comprising two or more locations in an ordered sequence.
+	\item Polygons -- areas defined by three or more vertex locations in an ordered sequence.
 \end{itemize}
 
 \section{Geographic Information Systems (GIS)}
@@ -153,37 +141,38 @@ A projection is the change of the representation of locations from one coordinat
 A Geographic Information System (GIS) is any system that is specifically designed to work with spatial data. GIS systems are implementations of some standard tasks, which may be present in as programming language libraries or functions, and/or as graphical user interfaces \cite{fox_spatial_2018}. Standard tasks include:
 
 \begin{itemize}
-	\item converting datums and projections
-	\item searching quickly for entities in particular regions
-	\item searching quickly for entities with spatial relationships to other entities
-	\item handling lots of data at large and small scales
-	\item geographical data visualizations
-	\item converting between standard spatial data file formats
+	\item Converting datums and projections.
+	\item Searching quickly for entities in particular regions.
+	\item Searching quickly for entities with spatial relationships to other entities.
+	\item Handling lots of data at large and small scales.
+	\item Geographical data visualizations.
+	\item Converting between standard spatial data file formats.
 \end{itemize}
 
-\comment[id=GP]{Mention which ones we used, if any. And some standard examples. Mention we mainy used Python libraries, instead of GIS.}
+In this work, we do not use any GIS system, instead, we only use Python libraries for working with spatial data.
 
 \section{Spatial files}
 
 Shapefiles are a storage format for the Open Geo-spatial Consortium (OGC) definition: points, lines, and polygons. They are small collections of related files, usually stored together in a directory. The main file has a \textit{.shp} extension and stores the actual feature geometries. Other files that may appear along with it include \textit{.dbf} (associated non-spatial properties data), \textit{.shx} (indexing structure), and \textit{.prj} (datum/projection information) \cite{fox_spatial_2018}.
 
-GeoJSON and Well-Known Text (WKT) are alternatives for storing such data. Most GIS systems can convert between those formats.
+GeoJSON, Well-Known Text (WKT), and GraphML are alternatives for storing such data. Most GIS systems can convert between those formats.
 
-\comment[id=GP]{Mention how is our data stored, why we chose the formats we used. Including stored graphs and geo data frames. Mention any size issues. Discuss a bit of how graph files are structured (maybe not too important).}
+The GraphML format is an XML-based file format for graphs. It supports a wide range of graph structures such as directed, undirected, and mixed graphs, hypergraphs, hierarchical graphs, and application-specific attributes; hence it is ideally suited for all kind of graphs.
+
+We store our spatial data as shapefiles and our graphs as GraphML files because the latter do not have any size limit, unlike shapefiles (2 GB). Additionally, we use geo data frames (data frames with a geometry column containing points, lines or polygons) to read and manipulate shapefiles.
 
 \section{OpenStreetMap}
 
-\comment[id=GP]{Start by stating that we obtain our data from OSM and end the section with a mention of OSMNX and a reference to its subsection. Also mention what type of data we download, and what other type of data is available (landmarks, locations, etc.) Also some background on OSM would be nice, you can take it from wikipedia or directly from OSM.}
+For this work, we obtain our street network from OpenStreetMap (OSM) because it is free and open-source.
 
-
-OpenStreetMap (OSM) is a collaborative worldwide mapping project that provides a free and publicly editable map of the world. In February 2021, there were over 7M registered contributors, as outlined on the OSM wiki \cite{osm-wiki}.
+OSM is a collaborative worldwide mapping project that provides a free and publicly editable map of the world. In February 2021, there were over 7M registered contributors, as outlined on the OSM wiki \cite{osm-wiki}. It was created as the solution for restrictions on use or availability of map data. 
 
 In Mexico, OSM imported the 2015 INEGI's Marco Geoestadístico Nacional (MGN) and the Red Nacional de Caminos (RNC) road data during the years 2015 and 2016 as part of the two OSM projects: Mexico Main Road Network Import Project \cite{osm_RNC_project}, and Mexico's Administrative Divisions Import Project \cite{osm_MGN_project}. Additionally, individual contributions have been made from OSM members to keep updated and accurate the data.
 Acquiring the spatial data from OSM is made via an API, called Overpass, to retrieve any data in the database. However, its usage and syntax are somewhat difficult and there are other services available that can simplify the process.
 
-\section{Network Analysis Tools}
+OSMnx is a Python library that overrides the difficult usage of OSM APIs (see subsection \ref{subsection:osmnx}). For the purpose of this work, we download the drivable public streets, but other types can also be downloaded if available: drivable public streets with service roads, pedestrian roads, and cycling roads.
 
-\comment[id=GP]{For all tools, briefly mention how and for what we used them.}
+\section{Network Analysis Tools}
 
 
 All the tools here presented are Python language packages or libraries. Python was chosen because it is a popular language, free, open-source, easy for beginners, powerful, and it gives us the ability to work interactively and easy integration with other Python libraries.
@@ -195,17 +184,20 @@ NetworkX is a free, open-source Python language package for the creation, manipu
 
 In addition NetworkX can read and write various graphs formats (e.g., adjacency list, edge list, GEXF, GML, pickle, GraphML, JSON, LEDA, YAML, SparseGraph6, Pajek, and GIS Shapefile), and provides generators for classic graphs, random graphs, and synthetic networks.
 
+We use NetworkX for graph manipulation and analysis. Its modules are easy to use and it is well-documented. Furthermore, OSMnx uses NetworkX under the hood.
 
 \subsection{GeoPandas}
 
 Python's spatial data frame library is called GeoPandas \cite{geopandas}. GeoPandas is an open source project that allows easier manipulation of geospatial data. It extends the datatypes used by pandas (data series and data frames) \cite{pandas, mckinney-proc-scipy-2010} to allow spatial operations on geometric types (points, lines, polygons). It uses shapely for geometric operations \cite{shapely}, fiona for spatial data file access \cite{fiona}, as well as descartes \cite{descartes} and matplotlib \cite{matplotlib, Hunter:2007} for plotting.
 
+We use GeoPandas for manipulate, visualize, read and save spatial and socio-demographic data. 
+
 \subsection{OSMnx}
+\label{subsection:osmnx}
 
 OSMnx \cite{boeing_osmnx_2017} is a free, open-source Python package to download spatial data from OpenStreetMap and model, project, visualize, and analyze real-world street networks (e.g., walking, driving, or biking network) including node elevations and street grades. It also allow us to save the street network as shapefiles, GeoPackages, and GraphML files for later use.
 
 OSMnx is built on top of GeoPandas, NetworkX, and matplotlib and interacts with OpenStreetMap's APIs. Thanks to that we can conduct topological and spatial analyses that OSMnx automatizes for calculating dozens of indicators, as well as calculating and visualizing the street network, street bearings and orientations, shortest-path routes.
-
 
 \subsection{PySAL}
 
@@ -220,9 +212,9 @@ PySAL is a family of packages and is divided into four components:
 	\item Lib -- It help us to solve a wide variety of computational geometry problems including graph construction from polygonal lattices, lines, and points, construction and interactive editing of spatial weights matrices and graphs, computation of spatial relationships, and reading and writing of spatial vector data.
 \end{itemize}
 
-\section{Related work}
+From this tool, we used the lib component to construct the connectivity matrix of AGEBs for the clustering algorithm.
 
-\comment[id=GP]{If time allows, try to extend the summary of relevant papers, leave for last.}
+\section{Related work}
 
 Spatial networks have been subject of study in many forms through the years. These forms, such as locations, flows of people and goods, activities, etc. are commonly studied involving time and space to make and answer questions in the complex system field to discuss the importance and evolution of networks.
 

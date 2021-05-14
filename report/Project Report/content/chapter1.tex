@@ -1,37 +1,67 @@
 \chapter{Introduction}
 \label{cha:introduction}
 
-
-
 \section{Background}
 
+Mérida is the capital and the most populated municipality in Yucatán. It is located in the northwestern region of the Yucatan Peninsula, with an estimated population of 995,129 inhabitants in an area of 874.4 km$^2$.
+
+Recently, the Municipal Institute of Planning of Mérida (IMPLAN) has made two plans regarding urban development and mobility \cite{PMDU_2017, PIMUS_2019}. Such studies mention that the urban structure and morphology have direct implications on connectivity and accessibility of roads. However, their statements are based on urban studies, and not based on network theory.
 
 \section{Problem Statement} 
 
+Currently, there are no local studies regarding network theory and urban roads in Mérida, along with socio-demographic data. This lack of research, makes us missing an important and insightful point of view of the urban street network in Mérida. Therefore, it exists a necessity for analyzing the urban street network based on network theory in Mérida, Yucatán.
 
 \section{Justification}
+
+We believe that analyzing street network at municipal and AGEB scale with socio-demographic data, will give us a clearer view of the urban form and the topological and metric complexity of the street network. 
 
 
 \section{Scope and limitations}
 
+This work covers the area of Mérida, Yucatán, México municipality and its urban AGEBs. Also, we only select relevant street network measures based on a review of spatial networks analysis and the study \cite{boeing_multi-scale_2018} made by Boeing. However, the precision of the street network is limited by the contributions in Open Street Map. Additionally, we do not have enough information regarding the analysis of Mérida's street network, as we believe is the first study of its kind in Mérida.
+
+This project, due to its own complexity, was limited by time, human, and computational resources.
+
+\begin{itemize}
+	\item \textbf{Time}: This project was set to have a duration of sixteen weeks. Starting on January 4th and ending on April 30th, 2021. We had approximately 640 working hours to finish the project.
+	\item \textbf{Human}: The project was done in its entirety by a single Data Engineering student, with the support and supervision of two professors of the Universidad Politécnica de Yucatán's Data Engineering department.
+	\item \textbf{Computational}: The project was run on a laptop with a 2-core CPU and 8 GB of RAM. The nature of the calculations require a computer with better specifications.
+\end{itemize}
 
 \section{Objectives}
 \subsection {General}
  
+Obtention and characterization of the urban street network of Mérida, Yucatán, México.
  
 \subsection {Specific}
 
 \begin{enumerate}
-\item 
+\item Obtention and characterization of the urban street network of Mérida, Yucatán, México at municipal scale.
 \begin{enumerate}
-    \item 
-    \item   
-    \item  
-\end{enumerate}
-	
-
+    \item Make an analysis of the current state of feasible tools and services that allows the obtention and characterization of street networks.
+    \item Download and model the street network of Mérida, Yucatán, México.
+    \item Review relevant measures for spatial networks analysis.
+    \item Calculate and describe measures on the street network.
 \end{enumerate}
 
 
+\item Obtention and characterization of the urban street network of Mérida, Yucatán, México at AGEB scale.
+\begin{enumerate}
+	\item Obtain socio-demographic data of Mérida.
+	\item Obtain geometries of the urban AGEBs of Mérida.
+	\item Download and model street network for every urban AGEB in Mérida.
+	\item Review relevant measures for spatial networks analysis.
+	\item Calculate and describe measures on the AGEBs street networks.
+	\item Merge street network calculations and socio-demographic data.
+\end{enumerate}
+
+
+\item Identification of AGEBs with similar characteristics. 
+\begin{enumerate}
+	\item Construct an adjacency matrix based on spatial weights to interconnect AGEBs.
+	\item Identify the pertinent clustering algorithm based on the data we are using.
+	\item Find the appropiate number of clusters that best similarity between AGEBs.
+\end{enumerate}
+\end{enumerate}
 
 
